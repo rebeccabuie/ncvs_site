@@ -29,10 +29,8 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Your post is now live.' }
-        format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,7 +52,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was removed.' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
       format.json { head :no_content }
     end
   end
@@ -70,3 +68,4 @@ class BlogsController < ApplicationController
       params.require(:blog).permit(:title, :body)
     end
 end
+
