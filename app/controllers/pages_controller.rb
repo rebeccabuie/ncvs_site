@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   def media
   end
 
-  def about
+  def about_me
   end
 
   def contact
