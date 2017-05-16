@@ -1,12 +1,13 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
-    @page_title = "Media"
+    @blogs = Blog.special_blogs
+    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
@@ -82,4 +83,3 @@ class BlogsController < ApplicationController
       params.require(:blog).permit(:title, :body)
     end
 end
-
