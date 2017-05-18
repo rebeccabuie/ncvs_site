@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get 'treatment', to: 'pages#treatment'
   get 'training', to: 'pages#training'
   get 'research', to: 'pages#research'
-  get 'media', to: 'pages#media'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
 
