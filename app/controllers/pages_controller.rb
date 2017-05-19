@@ -15,9 +15,6 @@ class PagesController < ApplicationController
   def research
   end
 
-  def media
-  end
-
   def about_me
   end
 
