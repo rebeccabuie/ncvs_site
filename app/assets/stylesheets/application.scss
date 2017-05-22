@@ -70,7 +70,7 @@ body {
 }
 
 .masthead-brand {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .nav-masthead .nav-link {
@@ -135,7 +135,10 @@ body {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
+    margin-bottom: 2px;
     top: 0;
+    background-color: black;
+
   }
   .mastfoot {
     position: fixed;
@@ -157,7 +160,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    
   }
 }
 
