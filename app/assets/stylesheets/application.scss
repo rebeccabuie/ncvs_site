@@ -121,6 +121,12 @@ body {
  * Footer
  */
 
+ .footer {
+  padding: 30px;
+  color: white;
+  background-color: black;
+ }
+
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
@@ -168,35 +174,48 @@ body {
  * Custom Styles
  */
 
-.app-card-container-1 {
+ .card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+ }
+
+.app-card-container-header {
   color: white;
   text-align: center;
 }
 
-.app-card-container-1 > .card {
+.app-card-container-header > .card {
   margin: 200px;
   padding: 10px;
   background: transparent;
 }
 
- .app-card-container-2 {
-  color: white;
-  text-align: center;
+ .app-card-container-statement {
+  
 }
 
-.app-card-container-2 > .card {
-  padding: 10px;
+.app-card-container-statement > .card {
+  padding-top: 30px;
   background-color: black;
 }
 
-.app-card-container-3 {
+.statement-text {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.app-card-container-media {
   color: black;
   text-align: center;
 }
 
-.app-card-container-3 > .card {
+.app-card-container-media > .card {
   padding: 40px;
   background: white;
+}
+
+.media-box {
+  border: 0.5px solid grey;
 }
 
 .auth-links a {

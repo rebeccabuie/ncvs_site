@@ -1,32 +1,32 @@
-<div class="app-card-container-1">
+<div class="app-card-container-header">
   <div class="card">
     <div class="row">
       <div class="col-md-12">
         <div class="inner cover">
           <h1 class="cover-heading">NATIONAL CENTER FOR VETERANS STUDIES</h1>
           <p class="lead">College of Social & Behavioral Science</p>
-                                    <%= video_tag(
+          <%= video_tag(
           'Cropped-Banner-Flag.mp4',
-          id: 'background',
-          autoplay: true,
-          loop: true,
-          muted: true,
-          poster: 'home_bg.png'
-        )
-        %>
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+          )
+          %>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="app-card-container-2">
+<div class="app-card-container-statement">
   <div class="card">
     <div class="row">
       <div class="col-md-3">
-        <%= image_tag "Soldier.jpg", width: 300, alt: "statement block" %>
+        <%= image_tag "Soldier.jpg", width: 250, alt: "statement block" %>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-8 statement-text">
         <h2>We believe in research, education, outreach, and advocacy for improving the lives of veterans, and better positioning these skilled, experienced and well-trained veterans for continued service that further advances American values, prosperity, and security.</h2>
 
         <hr> 
@@ -42,10 +42,10 @@
     </div>
   </div>
 
-  <div class="app-card-container-3">
+  <div class="app-card-container-media">
   <div class="card">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 media-box">
         <h4>Highlighted Project</h4>
         <%= image_tag "RandR.jpg", width: 200, alt: "r and r block" %>
 
@@ -56,7 +56,7 @@
         </p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 media-box">
         <h4>In the News</h4>
         <%= image_tag "ravellcall-image.png", width: 400, alt: "news" %>
         <p>A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
@@ -68,7 +68,7 @@
         </p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 media-box">
         <h4>Featured Videos</h4>
         <%= image_tag "video-screenshot.jpg", width: 400, alt: "rtz" %>
 
