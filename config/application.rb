@@ -17,7 +17,7 @@ require "dotenv-rails"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module DevcampPortfolio
+module NcvsSite
   class Application < Rails::Application
   end
 end

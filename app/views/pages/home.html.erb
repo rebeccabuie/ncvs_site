@@ -3,15 +3,15 @@
     <div class="row">
       <div class="col-md-12">
         <div class="inner cover">
-          <h1 class="cover-heading">NATIONAL CENTER FOR VETERANS STUDIES</h1>
-          <p class="lead">College of Social & Behavioral Science</p>
+          <h1 class="cover-heading header-title">NATIONAL CENTER FOR VETERANS STUDIES</h1>
+          <br>
+          <p class="lead header-subtitle">Helping Others Hold On</p>
           <%= video_tag(
           'Cropped-Banner-Flag.mp4',
             id: 'background',
             autoplay: true,
             loop: true,
             muted: true,
-            poster: 'home_bg.png'
           )
           %>
         </div>
@@ -27,9 +27,7 @@
         <%= image_tag "Soldier.jpg", width: 250, alt: "statement block" %>
       </div>
       <div class="col-md-8 statement-text">
-        <h2>We believe in research, education, outreach, and advocacy for improving the lives of veterans, and better positioning these skilled, experienced and well-trained veterans for continued service that further advances American values, prosperity, and security.</h2>
-
-        <hr> 
+        <h2 class="mission-statement">Our Mission: Conduct research, education, outreach, and advocacy for improving the lives of military personnel, veterans, and their families.</h2>
 
         <h4>Please help us continue to support veterans and the National Center for Veterans Studies and make a donation today.</h4>
 
@@ -42,43 +40,40 @@
     </div>
   </div>
 
-  <div class="app-card-container-media">
-  <div class="card">
-    <div class="row">
-      <div class="col-md-4 media-box">
-        <h4>Highlighted Project</h4>
-        <%= image_tag "RandR.jpg", width: 200, alt: "r and r block" %>
+  <div class="flex-container">
+    <div class="flex-item-4">
+      <h4>Highlighted Project</h4>
+      <%= image_tag "RandR.jpg", width: 200, alt: "r and r block" %>
 
-        <p>NCVS teams up with the National Ability Center to offer a 2 week program free of charge for military personnel with PTSD and their families to stay in Park City, receive empirically based treatment, and enjoy the natural wonders Utah has to offer. For inquiries, please email NCVS@utah.edu or call 801-587-7978.</p>
+      <p>NCVS teams up with the National Ability Center to offer a 2 week program free of charge for military personnel with PTSD and their families to stay in Park City, receive empirically based treatment, and enjoy the natural wonders Utah has to offer. For inquiries, please email NCVS@utah.edu or call 801-587-7978.</p>
 
-        <p class="lead">
-        <%= link_to "Read More", about_path, class: "btn btn-lg btn-info" %>
-        </p>
-      </div>
+      <p class="lead">
+      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      </p>
+    </div>
 
-      <div class="col-md-4 media-box">
-        <h4>In the News</h4>
-        <%= image_tag "ravellcall-image.png", width: 400, alt: "news" %>
-        <p>A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
+    <div class="flex-item-4">
+      <h4>In the News</h4>
+      <%= image_tag "ravellcall-image.png", width: 400, alt: "news" %>
+      <p>A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
 
-        <hr> 
+      <hr> 
 
-        <p class="lead">
-        <%= link_to "Read More", about_path, class: "btn btn-lg btn-info" %>
-        </p>
-      </div>
+      <p class="lead">
+      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      </p>
+    </div>
 
-      <div class="col-md-4 media-box">
-        <h4>Featured Videos</h4>
-        <%= image_tag "video-screenshot.jpg", width: 400, alt: "rtz" %>
+    <div class="flex-item-4">
+      <h4>Featured Videos</h4>
+      <%= image_tag "video-screenshot.jpg", width: 400, alt: "rtz" %>
 
-        <p>RIDE TO ZERO: A SUICIDE PREVENTION FUNDRAISER EVENT</p>
+      <p>RIDE TO ZERO: A SUICIDE PREVENTION FUNDRAISER EVENT</p>
 
-        <hr>
+      <hr>
 
-        <p class="lead">
-        <%= link_to "Read More", about_path, class: "btn btn-lg btn-info" %>
-        </p>
-      </div>
+      <p class="lead">
+      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      </p>
     </div>
   </div>

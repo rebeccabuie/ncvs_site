@@ -1,2 +1,116 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<div class="app-card-container-header">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner cover">
+          <h1 class="cover-heading pages-title">ABOUT US</h1>
+          <%= video_tag(
+          'Cropped-Banner-Flag.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+          )
+          %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="app-card-container-statement">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag "NCVS-Group-photo.jpg", alt: "group photo", class: 'group-img'%>
+      </div>
+      <div class="col-md-8 about-text">
+        <h2 class="about-statement">To engage in research, education, engagement, and advocacy to improve the lives of military personnel, veterans, and their families.</h2>
+      </div>
+    </div>
+  </div>
+
+<div class="flex-container">
+  <div class="flex-item">
+    <h3>Craig J. Bryan</h3>
+    <h4>Executive Director</h4>
+    <%= image_tag "craig-bryan-main.jpg", width: 300, alt: "craig-bryan" %>
+
+    <p>Dr. Craig J. Bryan, PsyD, ABPP, is a board-certified clinical psychologist and is an Assistant Professor in the Department of Psychology at the University of Utah. Dr. Bryan received his PsyD in clinical psychology Baylor University, and completed his clinical psychology residency at the Wilford Hall Medical Center, Lackland Air Force Base, Texas.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+
+  <div class="flex-item">
+    <h3>AnnaBelle O. Bryan</h3>
+    <h4>Director of Education and Outreach</h4>
+    <%= image_tag "AnnaBelle-Bryan.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
+    <p>TSgt (Ret) AnnaBelle Bryan is the Director of Education and Outreach and Co-Director of VE3TS Utah, for the National Center for Veterans Studies. During her 20 years in the military, she worked as a public health technician and executive officer at several military installations worldwide, including Williams AFB, Arizona, Langley AFB, Virginia, Ramstein AB, Germany, and Maxwell AFB, Alabama.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item">
+    <h3>Mira Reynolds</h3>
+    <h4>Research Manager</h4>
+    <%= image_tag "Mira-Reynolds.jpg", width: 300, alt: "Mira-Reynolds" %>
+
+    <p>Mira Reynolds, BA, is the research manager for the National Center for Veterans Studies. Her primary research interests are post-traumatic stress disorder, military sexual trauma, and suicide risk among military personnel. Mira is related to several veterans of the U.S. military and plans to continue to work with military mental health.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+
+  <div class="flex-item">
+    <h3>Anastasia Najarian</h3>
+    <h4>Outreach Manager</h4>
+    <%= image_tag "anastasia-najarian.jpg", width: 300, alt: "anastasia-najarian" %>
+    <p>Anastasia Najarian is the Outreach Manager for the National Center for Veterans Studies. She was introduced to NCVS through a capstone public relations project where she and her team developed an experiential video illustrating veteran trauma and negotiated donations to have the film professionally produced.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+
+  <div class="flex-item">
+    <h3>Kirsi White</h3>
+    <h4>Utah Comrades Administrative Assistant and VE3TS Utah Manager</h4>
+    <%= image_tag "kirsi-white.jpg", width: 300, alt: "kirsi-white" %>
+    <p>Kirsi White is an undergraduate research associate who is majoring in psychology at the University of Utah. As the Lead Research Associate, Kirsi assists in the planning and coordination of the Primary Care project for NCVS. She plans to pursue a doctorate in clinical psychology focused on depression, posttraumatic stress disorder and suicide risk. Kirsi is involved in research focused on post-traumatic stress in survivors of military sexual trauma and also survivors of sex trafficking in Cambodia.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item">
+    <h3>M. David Rudd</h3>
+    <h4>Co-Founder & Scientific Director</h4>
+    <%= image_tag "rudd-half.jpg", width: 300, alt: "rudd-half" %>
+      <p>Mira Reynolds, BA, is the research manager for the National Center for Veterans Studies. Her primary research interests are post-traumatic stress disorder, military sexual trauma, and suicide risk among military personnel. Mira is related to several veterans of the U.S. military and plans to continue to work with military mental health.</p>
+
+    <p class="lead">
+    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    </p>
+  </div>
+</div>
+
+
+<div class="about-buttons">
+  <%= link_to "Research Fellows", about_path, class: "btn btn-lg btn-danger" %>
+  <%= link_to "Reasearch Therapist", about_path, class: "btn btn-lg btn-danger" %>
+  <%= link_to "Postdoctoral Researchers", about_path, class: "btn btn-lg btn-danger" %>
+  <%= link_to "Graduate Students", about_path, class: "btn btn-lg btn-danger" %>
+  <%= link_to "Lead Research Associates", about_path, class: "btn btn-lg btn-danger" %>
+  <%= link_to "Research Associates", about_path, class: "btn btn-lg btn-danger" %>
+</div>
+
