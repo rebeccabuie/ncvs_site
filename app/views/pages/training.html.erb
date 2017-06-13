@@ -1,2 +1,53 @@
-<h1>Pages#training</h1>
-<p>Find me in app/views/pages/training.html.erb</p>
+<div class="app-card-container-header">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner cover">
+          <h1 class="cover-heading pages-title">TRAINING</h1>
+          <%= video_tag(
+          'Cropped-Banner-Flag.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+          )
+          %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="flex-container-2">
+    <div class="flex-item-2">
+      <h2 class="mission-statement">Mental Health Treatment Locator</h2>
+      <%= image_tag "depression-after-war-picture-id501578828.jpg", width: 400, alt: "mental health" %>
+      <br>
+      <br>
+      <p><u>VA Posttraumatic Stress Disorder (PTSD) Programs</u></p>
+      <p><u>VA Substance Use Disorder (SUD) Programs</u></p>
+      <p><u>Help Pro Therapist Finder for the Military</u></p>
+    </div>
+
+    <div class="flex-item-2">
+      <h2 class="mission-statement">National Service Academy</h2>
+        <%= image_tag "sergeant-of-marines-picture-id183817422.jpg", width: 400, alt: "national service academy" %>
+      <br>
+      <br>
+      <p><u>Designing a National Service Academy (paper by Prof. James Holbrook)</u></p>
+      <p><u>National Service Academy Courses</u></p>
+      <p><u>National Strategic Narrative</u></p>
+    </div>
+
+    <div class="flex-item-2">
+      <h2 class="mission-statement">Other Resources</h2>
+        <%= image_tag "military-man-in-uniform-and-civil-man-in-suit-shaking-hands-with-on-picture-id675301570.jpg", width: 400, alt: "resources" %>
+      <br>
+      <br>
+      <p><u>How to Help Military Families for Higher Education</u></p>
+      <p><u>ManTherapy.org</u></p>
+      <p><u>David Rudd's House Testimony</u></p>
+      <p><u>David Rudd's Senate Testimony</u></p>
+    </div>
+  </div>
+</div>
