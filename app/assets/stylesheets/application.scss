@@ -173,12 +173,24 @@ body {
  * Custom Styles
  */
 
+ .banner2 {
+    padding-left: 60px;
+    padding-right: 60px;
+ }
+
+ .banner-text {
+    font-size: 6em;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 4px 4px #757575;
+ }
+
  .flex-container {
     display: -webkit-flex;
     display: flex;
     width: 100%;
     height: auto;
-    background-color: transparent;
+    background:rgba(167,167,166,0.9);
 }
 
  .flex-container-2 {
@@ -187,6 +199,14 @@ body {
     width: 100%;
     height: auto;
     background-color: white;
+}
+
+ .flex-container-3 {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
 }
 
 .flex-item {
@@ -206,6 +226,14 @@ body {
     margin: 10px;
 }
 
+.flex-item-2 a {
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
 .flex-item-3-1 {
     background:rgba(0,47,93,0.9);
     text-align: left;
@@ -213,7 +241,6 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    margin: 10px;
 }
 .flex-item-3-1:hover {
     background: #003366;
@@ -226,7 +253,6 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    margin: 10px;
 }
 .flex-item-3-2:hover {
     background: #004080;
@@ -239,7 +265,6 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    margin: 10px;
 }
 .flex-item-3-3:hover {
     background: #0059b3;
@@ -252,7 +277,7 @@ body {
     width: 100%;
     height: auto;
     padding: 30px;
-    font-size: 1.5em;
+    font-size: 2ßßem;
 }
 
 .flex-item-float-left {
@@ -276,13 +301,66 @@ body {
 }
 
 .flex-item-4 {
-    background:rgba(104,104,104,0.9);
+    background: white;
     text-align: center;
-    color: white;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 25px;
+    box-shadow: 8px 8px 5px #757575;
+}
+
+.flex-item-5 {
+    background: white;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 25px;
+}
+
+.flex-item-button {
+    color: black;
     width: 100%;
     height: auto;
     padding: 10px;
     margin: 10px;
+}
+
+.about-section {
+  padding: 20px;
+}
+
+.section-header {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #ffffff; 
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.section-header span {
+  background: #000000;
+  padding: 0px 20px 0px 20px;
+}
+
+.resource-img {
+  padding-bottom: 20px;
+} 
+
+.banner2-image {
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner2-text {
+  padding: 10px;
+}
+
+.banner2-header {
+  padding: 10px;
 }
 
  .app-card-nav-header > .card {
@@ -307,6 +385,7 @@ body {
 .pages-title {
   font-size: 3.5rem;
   text-shadow: 2px 2px 8px #000000;
+  padding-bottom: 50px;
 }
 
 .nav-header-title {
@@ -316,6 +395,12 @@ body {
 
 .app-card-container-header > .card {
   margin: 200px;
+  padding: 10px;
+  background: transparent;
+}
+
+.app-card-container-header-login > .card {
+  margin: 100px;
   padding: 10px;
   background: transparent;
 }
@@ -333,6 +418,7 @@ body {
 .app-card-container-statement > .card {
   padding-top: 30px;
   background-color: black;
+  border-top: 1px solid #ffffff;
 }
 
 .statement-text {
@@ -345,10 +431,21 @@ body {
   padding: 20px;
 }
 
+.about-us {
+  background-color: black;
+}
+
+.about-us-content {
+  padding-top: 40px;
+}
+
 .about-statement {
-  padding: 100px 50px 10px 50px;
+  padding-top: 50px;
   text-align: center;
-  float: right;
+}
+
+.about-text {
+  text-align: center;
 }
 
 .app-card-container-media {
@@ -368,6 +465,11 @@ body {
 .about-box {
   color: black;
   border: 0.5px solid grey;
+}
+
+.card-block {
+  color: black;
+  text-align: left;
 }
 
 .auth-links a {
@@ -417,11 +519,6 @@ body {
 .footer-logo {
   padding: 20px;
 }
-
-
-
-
-
 
 
 

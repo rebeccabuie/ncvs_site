@@ -6,6 +6,7 @@
           <h1 class="cover-heading header-title">NATIONAL CENTER FOR VETERANS STUDIES</h1>
           <br>
           <p class="lead header-subtitle">Helping Others Hold On</p>
+          <button type="button" class="btn btn-outline-secondary btn-lg">Survey Button</button>
           <%= video_tag(
           'Cropped-Banner-Flag.mp4',
             id: 'background',
@@ -41,39 +42,36 @@
   </div>
 
   <div class="flex-container">
+    <div class="banner2">
+      <h1 class="banner-text">What's New at NCVS?</h1>
+    </div>
     <div class="flex-item-4">
-      <h4>Highlighted Project</h4>
-      <%= image_tag "RandR.jpg", width: 200, alt: "r and r block" %>
-
-      <p>NCVS teams up with the National Ability Center to offer a 2 week program free of charge for military personnel with PTSD and their families to stay in Park City, receive empirically based treatment, and enjoy the natural wonders Utah has to offer. For inquiries, please email NCVS@utah.edu or call 801-587-7978.</p>
-
+      <h4 class="banner2-header">Highlighted Project</h4>
+      <%= image_tag "RandR.jpg", width: 400, alt: "r and r block", class: 'banner2-image'%>
+      <p class="banner2-text">NCVS teams up with the National Ability Center to offer a 2 week program free of charge for military personnel with PTSD and their families to stay in Park City, receive empirically based treatment, and enjoy the natural wonders Utah has to offer. For inquiries, please email NCVS@utah.edu or call 801-587-7978.</p>
+      <br>
       <p class="lead">
-      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      <%= link_to "Read More", about_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
 
     <div class="flex-item-4">
-      <h4>In the News</h4>
-      <%= image_tag "ravellcall-image.png", width: 400, alt: "news" %>
-      <p>A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
-
-      <hr> 
-
+      <h4 class="banner2-header">In the News</h4>
+      <%= image_tag "ravellcall-image.jpg", width: 400, alt: "news", class: 'banner2-image'%>
+      <p class="banner2-text">A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
+      <br>
       <p class="lead">
-      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      <%= link_to "Read More", about_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
 
     <div class="flex-item-4">
-      <h4>Featured Videos</h4>
-      <%= image_tag "video-screenshot.jpg", width: 400, alt: "rtz" %>
-
-      <p>RIDE TO ZERO: A SUICIDE PREVENTION FUNDRAISER EVENT</p>
-
-      <hr>
-
+      <h4 class="banner2-header">Featured Videos</h4>
+      <%= image_tag "video-screenshot.jpg", width: 400, alt: "rtz", class: 'banner2-image' %>
+      <p class="banner2-text">RIDE TO ZERO: A SUICIDE PREVENTION FUNDRAISER EVENT</p>
+      <br>
       <p class="lead">
-      <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+      <%= link_to "Read More", about_path, class: "btn btn-outline-secondary" %>
       </p>
     </div>
   </div>

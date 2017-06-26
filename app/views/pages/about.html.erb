@@ -4,6 +4,7 @@
       <div class="col-md-12">
         <div class="inner cover">
           <h1 class="cover-heading pages-title">ABOUT US</h1>
+          <button type="button" class="btn btn-outline-secondary btn-lg">Survey Button</button>
           <%= video_tag(
           'Cropped-Banner-Flag.mp4',
             id: 'background',
@@ -18,10 +19,96 @@
   </div>
 </div>
 
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>DIRECTORS</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-4">
+    <%= image_tag "craig-bryan-main.jpg", width: 300, alt: "craig-bryan" %>
+    <h3>Craig J. Bryan</h3>
+    <h4>Executive Director</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#craig-bryan"
+        aria-expanded="false"
+        aria-controler="craig-bryan">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="craig-bryan">
+        <div class="card card-block">
+          <p>
+          Dr. Craig J. Bryan, PsyD, ABPP, is a board-certified clinical psychologist and is an Assistant Professor in the Department of Psychology at the University of Utah.
+          </p>
+          Dr. Bryan received his PsyD in clinical psychology Baylor University, and completed his clinical psychology residency at the Wilford Hall Medical Center, Lackland Air Force Base, Texas. He served four years in the Air Force on active duty as the Chief of Primary Care Psychology Services and Suicide Prevention Program Manager at Lackland AFB, and deployed to Iraq in 2009 as the Clinical Director of the Traumatic Brain Injury Clinic located at Joint Base Balad (LSA Anaconda), Iraq. Dr. Bryan currently researchers suicide, psychological health, and resiliency among military personnel and veterans, and oversees two randomized controlled trials totaling approximately $3M testing interventions for suicidal military personnel at Fort Carson, Colorado. He also serves as the lead risk management consultant for the $25 million STRONG STAR Research Consortium investigating treatments for combat-related PTSD among military personnel. Dr. Bryan is a nationally-recognized expert on military suicide, and serves as a consultant to the Department of Defense for psychological health promotion initiatives and suicide prevention. He regularly provides training to clinicians and medical professionals about managing suicidal patients, and has over 120 publications and scientific presentations in the areas of suicide and military mental health, including the book Managing Suicide Risk in Primary Care.
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-4 about-section-border">
+
+    <%= image_tag "AnnaBelle-Bryan.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
+    <h3>AnnaBelle O. Bryan</h3>
+    <h4>Director of Education and Outreach</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#annabelle-bryan"
+        aria-expanded="false"
+        aria-controler="annabelle-bryan">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="annabelle-bryan">
+        <div class="card card-block">
+          <p>
+          TSgt (Ret) AnnaBelle Bryan is the Director of Education and Outreach and Co-Director of VE3TS Utah, for the National Center for Veterans Studies. During her 20 years in the military, she worked as a public health technician and executive officer at several military installations worldwide, including Williams AFB, Arizona, Langley AFB, Virginia, Ramstein AB, Germany, and Maxwell AFB, Alabama.
+          </p>
+          AnnaBelle served on active duty in the U.S. Air Force for 20 years as a public health technician and executive officer at several military installations worldwide, to include a deployment to Iraq in 2009, where she was responsible for disease monitoring and health surveillance for over 25,000 military personnel and civilian contractors. Since her retirement from active duty service in 2012, AnnaBelle has been conducting research focused on military and veteran suicide prevention, PTSD, military sexual trauma, and moral injury. She is the project coordinator of two Department of Defense-funded studies aimed at identifying indicators of emerging suicide risk on social media networks, and currently serves as the Co-Investigator of a DOD-funded study to identify optimal methods for enacting firearm safety procedures to prevent military suicide. A certified peer specialist trainer, AnnaBelle provides training and supervision to veteran peer specialists across the state of Utah and helps service members and veterans struggling with mental health conditions to find and obtain empirically-supported treatment. AnnaBelle holds a degree in public health from the American Military University, and a master's degree in Exercise & Sports Psychology from The University of Utah.
+        </div>
+      </div>
+    </p>
+  </div>
+
+  <div class="col-md-4">
+    <%= image_tag "Feea-Leifker.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
+    <h3>Feea Leifker, Ph.D., M.P.H.</h3>
+    <h4>Director of Clinical Services</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#feea-leifker"
+        aria-expanded="false"
+        aria-controler="feea-leifker">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="feea-leifker">
+        <div class="card card-block">
+          <p>
+          Dr. Leifker is a clinical psychologist who provides clinical services and conducts research for the NCVS. She received her doctorate from The Pennsylvania State University and earned a master's degree in public health from Emory University. She completed her predoctoral clinical psychology internship at the University of California, San Diego/San Diego Veterans Affairs Medical Center, where she provided couple therapy and evidence-based treatments for anxiety disorders and PTSD to veterans. Her research has focused on understanding how mental health problems, particularly PTSD, impact relationships, and how social support and other relationship factors can be used to enhance recovery from mental health conditions.</p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
 <div class="app-card-container-statement">
   <div class="card">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= image_tag "NCVS-Group-photo.jpg", alt: "group photo", class: 'group-img'%>
       </div>
       <div class="col-md-8 about-text">
@@ -29,88 +116,566 @@
       </div>
     </div>
   </div>
+</div>
 
-<div class="flex-container">
-  <div class="flex-item">
-    <h3>Craig J. Bryan</h3>
-    <h4>Executive Director</h4>
-    <%= image_tag "craig-bryan-main.jpg", width: 300, alt: "craig-bryan" %>
-
-    <p>Dr. Craig J. Bryan, PsyD, ABPP, is a board-certified clinical psychologist and is an Assistant Professor in the Department of Psychology at the University of Utah. Dr. Bryan received his PsyD in clinical psychology Baylor University, and completed his clinical psychology residency at the Wilford Hall Medical Center, Lackland Air Force Base, Texas.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
-    </p>
-  </div>
-
-  <div class="flex-item">
-    <h3>AnnaBelle O. Bryan</h3>
-    <h4>Director of Education and Outreach</h4>
-    <%= image_tag "AnnaBelle-Bryan.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
-    <p>TSgt (Ret) AnnaBelle Bryan is the Director of Education and Outreach and Co-Director of VE3TS Utah, for the National Center for Veterans Studies. During her 20 years in the military, she worked as a public health technician and executive officer at several military installations worldwide, including Williams AFB, Arizona, Langley AFB, Virginia, Ramstein AB, Germany, and Maxwell AFB, Alabama.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
-    </p>
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>MANAGERS</span></h1>
+    </div>
   </div>
 </div>
 
-<div class="flex-container">
-  <div class="flex-item">
-    <h3>Mira Reynolds</h3>
-    <h4>Research Manager</h4>
-    <%= image_tag "Mira-Reynolds.jpg", width: 300, alt: "Mira-Reynolds" %>
-
-    <p>Mira Reynolds, BA, is the research manager for the National Center for Veterans Studies. Her primary research interests are post-traumatic stress disorder, military sexual trauma, and suicide risk among military personnel. Mira is related to several veterans of the U.S. military and plans to continue to work with military mental health.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
-    </p>
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "nick-oakeyfrost.jpg", width: 300, alt: "nick-oakeyfrost" %>
+      <h3>Nick Oakey-Frost, B.A.</h3>
+      <h4>Research Manager</h4>
+      <p>
+        <button class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nick-oakeyfrost"
+          aria-expanded="false"
+          aria-controler="nick-oakeyfrost">
+          Read More
+        </button>
+      </p>
+      <p>
+        <div class="collapse" id="nick-oakeyfrost">
+          <div class="card card-block">
+            <p>
+            Nick Oakey-Frost graduated from The University of Utah with a BA in Psychology and a Minor in Anthropology. Within the next 2- 3 years, Nick hopes to move on to graduate school to pursue a Ph.D. in Clinical Psychology. Nick has garnered exposure to broad smattering of research and topics within the field of Psychology, while simultaneously honing his interests toward developmental psychopathology, trauma, suicide, and the intersection of trauma, anit-social behaviors, and their mediators.
+            </p>
+          </div>
+        </div>
+      </p>
   </div>
-
-  <div class="flex-item">
-    <h3>Anastasia Najarian</h3>
-    <h4>Outreach Manager</h4>
+  <div class="col-md-3">
     <%= image_tag "anastasia-najarian.jpg", width: 300, alt: "anastasia-najarian" %>
-    <p>Anastasia Najarian is the Outreach Manager for the National Center for Veterans Studies. She was introduced to NCVS through a capstone public relations project where she and her team developed an experiential video illustrating veteran trauma and negotiated donations to have the film professionally produced.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    <h3>Anastasia Najarian</h3>
+    <h4>Engagement Manager</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#anastasia-najarian"
+        aria-expanded="false"
+        aria-controler="anastasia-najarian">
+        Read More
+      </button>
     </p>
-  </div>
-
-  <div class="flex-item">
-    <h3>Kirsi White</h3>
-    <h4>Utah Comrades Administrative Assistant and VE3TS Utah Manager</h4>
-    <%= image_tag "kirsi-white.jpg", width: 300, alt: "kirsi-white" %>
-    <p>Kirsi White is an undergraduate research associate who is majoring in psychology at the University of Utah. As the Lead Research Associate, Kirsi assists in the planning and coordination of the Primary Care project for NCVS. She plans to pursue a doctorate in clinical psychology focused on depression, posttraumatic stress disorder and suicide risk. Kirsi is involved in research focused on post-traumatic stress in survivors of military sexual trauma and also survivors of sex trafficking in Cambodia.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    <p>
+      <div class="collapse" id="anastasia-najarian">
+        <div class="card card-block">
+          <p>
+          Anastasia has a unique combination of education and experience in strategic communication, public relations and psychology. She worked with veterans, youth and prisoners for 20 years who struggled with trauma, addiction and self-sabotage to change their lives. She served as Director of In-Home Services for a residential treatment center for youth. As Utah Director for The International Coalition for Drug Awareness she researched adverse drug effects and provided defense mitigation for drug related crimes.
+          </p>
+        </div>
+      </div>
     </p>
   </div>
 </div>
 
-<div class="flex-container">
-  <div class="flex-item">
-    <h3>M. David Rudd</h3>
-    <h4>Co-Founder & Scientific Director</h4>
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>RESEARCH FELLOWS</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "eric-garland.jpg", width: 300, alt: "eric-garland" %>
+    <h3>Eric Garland</h3>
+    <h4>Research Fellow</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#eric-garland"
+        aria-expanded="false"
+        aria-controler="eric-garland">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="eric-garland">
+        <div class="card card-block">
+          <p>
+          Dr. Garland’s biobehavioral research agenda is focused on translating findings from cognitive and affective neuroscience into treatments for stress-related conditions. Dr. Garland is the developer of Mindfulness-Oriented Recovery Enhancement (MORE), a multimodal intervention designed to ameliorate transdiagnostic mechanisms underpinning stress, addiction, emotion dysregulation, and chronic pain. He has received funding from the National Institutes of Health to conduct clinical trials of MORE as a treatment for alcohol dependence, prescription opioid misuse, and chronic pain among civilians and members of the U.S. Military. Complementing his expertise in clinical research, Dr. Garland is a licensed clinical social worker with over a decade of experience providing cognitive-behavioral and mindfulness-based therapies for persons suffering from addictive behaviors, psychological distress, and chronic pain syndromes.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "james-griffith.jpg", width: 300, alt: "james-griffith" %>
+    <h3>Eric Garland</h3>
+    <h4>Research Fellow</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#james-griffith"
+        aria-expanded="false"
+        aria-controler="james-griffith">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="james-griffith">
+        <div class="card card-block">
+          <p>
+          COL (Ret) James Griffith, PhD, is a research psychologist who received his PhD in applied social psychology from The Clarement Colleges, and is a graduate of the U.S. Army War College. COL Griffith recently retired from military service after serving over 36 years in the Army active and Reserve components. COL Griffith was initially trained in Russian and served with the U.S. Army Security Agency, Field Station Berlin, and was later appointed to serve as a uniformed research psychologist at the Walter Reed Army Institute of Research. While serving in the Maryland Army National Guard, he supervised data collection, analyses, and findings concerning the recruitment and retention of Army Guard and Reserve members. COL Griffith has additionally served as the uniformed Research Psychology Consultant to the Chief of the Medical Services Corps, Office of the Army Surgeon General, and later developed and implemented an evaluation of the Army's screening, referral, and treatment procedures for Soldiers with PTSD and related symptoms at the Walter Reed Deployment Health Clinical Center.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>POST DOCTORAL FELLOWS</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "alexis-may.jpg", width: 300, alt: "alexis-may" %>
+    <h3>Alexis May, PhD</h3>
+    <h4>Post-Doc Research Fellow</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#alexis-may"
+        aria-expanded="false"
+        aria-controler="alexis-may">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="alexis-may">
+        <div class="card card-block">
+          <p>
+          Dr. May is a clinical psychologist who received her PhD in clinical psychology from the University of British Columbia and recently completed her clinical psychology internship at the Alpert Medical School of Brown University. Her primary research interest is understanding the etiology, trajectory, and prevention of suicidal thoughts and behaviors. Her work has focused on in differentiating those who act on suicidal thoughts from those who do not, understanding motivations for suicidal behavior, and clarifying the role of impulsivity in suicidality. She has won several awards, including the BCPA Graduate Medal and a Simons Foundation Doctoral Scholarship, as well as support for her research from the UBC Faculty of Arts and the Military Suicide Research Consortium. Clinically, Dr. May is trained in dialectical behavioral therapy, cognitive behavioral therapy, and motivational.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "david-rozek" %>
+    <h3>David Rozek, PsyD</h3>
+    <h4>Pots-Doc Research Fellow</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#david-rozek"
+        aria-expanded="false"
+        aria-controler="david-rozek">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="david-rozek">
+        <div class="card card-block">
+          <p>
+          Dr. Rozek is a clinical psychologist and holds a primary appointment at the University of Utah in the Department of Psychiatry. He received his PhD from the University of Notre Dame and completed his residency at the Orlando Veterans Affairs Medical Center. Dr. Rozek’s clinical and research expertise is in cognitive and behavioral therapies for depression, PTSD, and anxiety related disorders.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>RESEARCH THERAPISTS</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "david-rozek" %>
+    <h3>Sean Williams, LMSW</h3>
+    <h4>Research Evaluator</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sean-williams"
+        aria-expanded="false"
+        aria-controler="sean-williams">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="sean-williams">
+        <div class="card card-block">
+          <p>
+          Sean is a clinical social worker earned his MSW from The Ohio State University. He has worked in a number of clinical settings as a mental health clinician, to include the Chalmers P. Wylie Veterans Outpatient Clinic in Columbus, Ohio. He currently serves as a research evaluator for the NCVS. In this capacity he conducts structured interviews and coordinates assessments for military personnel enrolled in multiple NCVS research studies.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>GRADUATE STUDENTS</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "erika-roberge.jpg", width: 300, alt: "erika-roberge" %>
+    <h3>Erika Roberge, MS</h3>
+    <h4>Graduate Student</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#erika-roberge"
+        aria-expanded="false"
+        aria-controler="erika-roberge">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="erika-roberge">
+        <div class="card card-block">
+          <p>
+          Erika Roberge, B.A. is a Clinical Science Ph.D student at the University of Utah. Erika worked at the Center for the Study of Traumatic Stress and the Washington DC Veterans Affairs Medical Center examining the impact of posttraumatic stress disorder (PTSD) on veterans and their spouses. Erika's primary research interests are in the prevention and treatment of PTSD and suicide in military and veteran populations.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+   <div class="col-md-3">
+    <%= image_tag "kent-hinkson.jpg", width: 300, alt: "kent-hinkson" %>
+    <h3>Kent Hinkson</h3>
+    <h4>Graduate Student</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#kent-hinkson"
+        aria-expanded="false"
+        aria-controler="kent-hinkson">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="kent-hinkson">
+        <div class="card card-block">
+          <p>
+          Kent is a Clinical Science Ph.D. student at the University of Utah. Kent previously served on active duty as a Non-Commissioned Officer in the United States Marine Corps as a linguist/interrogator; his interest in PTSD and TBIs came about after being medically retired from the Marine Corps.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "julia-harris.jpg", width: 300, alt: "julia-harris" %>
+    <h3>Kent Hinkson</h3>
+    <h4>Graduate Student</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#julia-harris"
+        aria-expanded="false"
+        aria-controler="julia-harris">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="julia-harris">
+        <div class="card card-block">
+          <p>
+          Julia Harris, B.S. is a Clinical Science Ph.D. student at the University of Utah, currently in her 3rd year. Prior to joining the NCVS, Julia worked as a research assistant at Harvard University on a research study examining suicide-related cognition in Veterans. Under the supervision of Dr. Craig Bryan, Julia is currently working on research studies with military personnel examining (1) suicide classification and nomenclature, (2) PTSD assessment and treatment effectiveness, and (3) suicide warning signs vs. risk factors. 
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "kelsi-rugo" %>
+    <h3>Kelsi Rugo, MA</h3>
+    <h4>Graduate student</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#kelsi-rugo"
+        aria-expanded="false"
+        aria-controler="kelsi-rugo">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="kelsi-rugo">
+        <div class="card card-block">
+          <p>
+          Kelsi Rugo, MA, NCC is a Clinical Science PhD student at The University of Utah. Kelsi’s research interests include (1) the role of impulsivity-related variables in the thought-to-action sequence of suicide, (2) evidence-based practice for suicide prevention and trauma treatment, and (3) transgender veteran psychological health. Kelsi previously worked in outpatient psychology at the Nashville- and Mann-Grandstaff VA Medical Centers. She plans to serve as an active duty Navy psychologist upon graduation.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>RESEARCH ASSOCIATES</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "william-russell.jpg", width: 300, alt: "william-russell" %>
+    <h3>William Russell</h3>
+    <h4>Lead Research Associate: VE3TS Utah</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#william-russell"
+        aria-expanded="false"
+        aria-controler="william-russell">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="william-russell">
+        <div class="card card-block">
+          <p>
+          William Russell was born in Logansport, IN in 1972, and raised in South Ogden, UT where he enlisted in the US Army, Infantry. He graduated in 1990 from OSUT at Fort Benning, GA. He was stationed in USAEUR, Germany. He then spent moved to Fort Drum, NY, South Korea, and, Fort Benning, GA. He deployed to Afghanistan for three-tours and served one tour in Iraq. Upon retirement in 2012, after 22-years of service, he obtained his AA degree at Tallahassee Community College. William moved from Florida, back to Utah to attend the University of Utah where he earned his Bachelor's Degree in Psychology with a minor in Sociology. He is currently enrolled in the MSW program at the University of Utah. He has been married to his wife, Alexis, they have a 3-year old son, Robert and has a 16-year old son, Thomas.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "jacqueline-letts-theriault" %>
+    <h3>Jacqueline Letts Theriault, MSW</h3>     
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#jacqueline-letts"
+        aria-expanded="false"
+        aria-controler="jacqueline-letts">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="jacqueline-letts">
+        <div class="card card-block">
+          <p>
+          Jacqueline Letts Theriault was born and raised in Yorba Linda, California. At age twenty-two, she joined the U.S. Army and served 3 years as on active duty. After completing her military contract, Jacqueline began college. She completed a Bachelor of Science in Psychology degree and Master in Social Work. 
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "william-andres" %>
+    <h3>William Andres</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#william-andres"
+        aria-expanded="false"
+        aria-controler="william-andres">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="william-andres">
+        <div class="card card-block">
+          <p>
+          William Andres is an undergraduate research associate. He is majoring in Psychology and minoring in Human Development and Family Studies at the University of Utah. As a research associate, he assists in the R&R program and the study of important underlying mechanisms in BCBT. He plans on pursuing a doctorate in counseling psychology. His primary research interests are suicide risk, depression, anxiety and the underlying mechanisms of various treatments in order to enhance their efficacy. 
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "bret-bradshaw" %>
+    <h3>Bret Bradshaw</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#bret-bradshaw"
+        aria-expanded="false"
+        aria-controler="bret-bradshaw">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="bret-bradshaw">
+        <div class="card card-block">
+          <p>
+          Bret Bradshaw is a senior in the Department of Psychology working as a Research Associate. His goal is to pursue in Clinical Psychology with a focus on PTSD. Long term, Bret hopes to own a horse ranch for people (mostly minors) who have been rescued from sex traffickers.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+<div class="row about-us">
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "logan-smith" %>
+    <h3>Logan Smith</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#logan-smith"
+        aria-expanded="false"
+        aria-controler="logan-smith">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="logan-smith">
+        <div class="card card-block">
+          <p>
+          Logan Smith is a graduate of Florida State University, where he earned a Bachelor of Science in Psychology. While at Florida State, he completed an Honor in the Major Thesis focusing on a correlation between military basic training performance and mental health outcomes. His research interests include military psychology, suicidology, depression, and other related topics. Logan plans to pursue a PhD in Clinical Psychology.
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "jerry-xyz" %>
+    <h3>Jerry XYZ</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#jerry-xyz"
+        aria-expanded="false"
+        aria-controler="jerry-xyz">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="jerry-xyz">
+        <div class="card card-block">
+          <p>
+          Add bio here!
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "cole-xyz" %>
+    <h3>Cole XYZ</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#cole-xyz"
+        aria-expanded="false"
+        aria-controler="cole-xyz">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="cole-xyz">
+        <div class="card card-block">
+          <p>
+          Add bio here!
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 300, alt: "tyler-cheney" %>
+    <h3>Tyler Cheney, MSW</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#tyler-cheney"
+        aria-expanded="false"
+        aria-controler="tyler-cheney">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="tyler-cheney">
+        <div class="card card-block">
+          <p>
+          Add bio here!
+          </p>
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-12">
+    <div class="about-section">
+      <h1 class="section-header"><span>Co-Founder & Scientific Director</span></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row about-us">
+  <div class="col-md-3">
     <%= image_tag "rudd-half.jpg", width: 300, alt: "rudd-half" %>
-      <p>Mira Reynolds, BA, is the research manager for the National Center for Veterans Studies. Her primary research interests are post-traumatic stress disorder, military sexual trauma, and suicide risk among military personnel. Mira is related to several veterans of the U.S. military and plans to continue to work with military mental health.</p>
-
-    <p class="lead">
-    <%= link_to "Read More", about_path, class: "btn btn-lg btn-danger" %>
+    <h3>Bret Bradshaw</h3>
+    <h4>Research Associate</h4>
+    <p>
+      <button class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#rudd-half"
+        aria-expanded="false"
+        aria-controler="rudd-half">
+        Read More
+      </button>
+    </p>
+    <p>
+      <div class="collapse" id="rudd-half">
+        <div class="card card-block">
+          <p>
+          Dr. M. David Rudd, PhD, ABPP, is a board-certified clinical psychologist and is currently Provost of the University of Memphis and Co-Founder of the National Center for Veterans Studies.
+          </p>
+          <p>
+          He received his PhD in clinical psychology from Princeton University, and completed postdoctoral training at the Beck Institute in Philadelphia under the direction of Aaron T. Beck Dr. Rudd served in the Army on active duty status as a psychologist for four years, and has since been named a Fellow of three professional societies including the American Psychological Association (Division 12 and Division 29), the International Association of Suicide Research, and the Academy of Cognitive Therapy (a founding fellow). He was recently elected a Distinguished Practitioner and Scholar of the National Academies of Practice in Psychology. In addition to his clinical work, Dr. Rudd is an active researcher with over 170 publications and several books. He is currently conducting a $1.97M clinical trial to reduce suicide attempts among Soldiers at Fort Carson, Colorado. Dr. Rudd has served as a consultant to many organizations nationally and internationally, including the U.S. Air Force, the U.S. Army, the Department of Defense, and the Beijing Suicide Prevention and Research Center. He serves on a number of editorial boards, is past Chair of the Texas State Board of Examiners of Psychologists, past President of the Texas Psychological Association, past President of Division 12 Section VII of the American Psychological Association, past Past-President of the American Association of Suicidology, a previous members of the APA Council of Representatives, and currently serves on the board of the PDV Foundation. Dr. Rudd has testified five times before the U.S. Congress, both House and Senate, on issues related to veterans and suicide.
+          </p>
+        </div>
+      </div>
     </p>
   </div>
 </div>
-
-
-<div class="about-buttons">
-  <%= link_to "Research Fellows", about_path, class: "btn btn-lg btn-danger" %>
-  <%= link_to "Reasearch Therapist", about_path, class: "btn btn-lg btn-danger" %>
-  <%= link_to "Postdoctoral Researchers", about_path, class: "btn btn-lg btn-danger" %>
-  <%= link_to "Graduate Students", about_path, class: "btn btn-lg btn-danger" %>
-  <%= link_to "Lead Research Associates", about_path, class: "btn btn-lg btn-danger" %>
-  <%= link_to "Research Associates", about_path, class: "btn btn-lg btn-danger" %>
-</div>
-
