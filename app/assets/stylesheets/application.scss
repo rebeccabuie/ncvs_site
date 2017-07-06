@@ -182,7 +182,6 @@ body {
     font-size: 6em;
     text-align: center;
     padding-top: 40px;
-    text-shadow: 4px 4px #757575;
  }
 
  .flex-container {
@@ -190,7 +189,7 @@ body {
     display: flex;
     width: 100%;
     height: auto;
-    background:rgba(167,167,166,0.9);
+    background:rgba(0,0,0,0.6);
 }
 
  .flex-container-2 {
@@ -308,7 +307,6 @@ body {
     height: auto;
     padding: 0px;
     margin: 25px;
-    box-shadow: 8px 8px 5px #757575;
 }
 
 .flex-item-5 {
@@ -416,9 +414,10 @@ body {
 }
 
 .app-card-container-statement > .card {
+  border-top: 1px solid #ffffff;
   padding-top: 30px;
   background-color: black;
-  border-top: 1px solid #ffffff;
+  
 }
 
 .statement-text {
@@ -446,6 +445,30 @@ body {
 
 .about-text {
   text-align: center;
+}
+
+.image-link-container {
+  background: #000000;
+}
+
+.treatment-header {
+  font-size: 4rem;
+  background: #000000;
+  padding: 20px;
+}
+
+.image-link-boxes { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   background: #000000; 
+}
+
+.image-link-boxes h1 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%;
+   font-size: 3rem;
 }
 
 .app-card-container-media {
@@ -489,6 +512,141 @@ body {
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.workshops-1-main {
+  background:url(war-veteran-with-problems-picture-id490240282.jpg);
+  background-repeat:no-repeat !important;
+  background-size: cover !important;
+  background-position:center center !important;
+  min-height:300px;
+}
+
+.workshops-1-main h4 {
+  font-size: 2em;
+}
+
+.workshops-1-main:hover {
+    background: #003366;
+}
+
+.workshops-1 {
+  padding: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.workshops-1-left{
+  padding: 30px 60px 30px 60px;
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  height: auto;
+}
+
+.workshops-1-right{
+  padding: 30px;
+  float: right;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-1-bottom{
+  padding: 10px;
+  width: 100%;
+  clear: both;
+}
+
+.workshops-2-main {
+  background:url(speaker-at-business-convention-and-presentation-picture-id498565457.jpg);
+  background-repeat:no-repeat !important;
+  background-size: cover !important;
+  background-position:center center !important;
+  min-height:300px;
+}
+
+.workshops-2-main h4 {
+  font-size: 2em;
+}
+
+.workshops-2-main:hover {
+    background: #004080;
+}
+
+.workshops-2 {
+  padding: 0 auto;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-2-left{
+  padding: 30px;
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-2-right{
+  padding: 30px 50px 30px 50px;
+  float: right;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-2-bottom{
+  padding: 10px;
+  width: 100%;
+  clear: both;
+}
+
+.workshops-3-main {
+  background:url(soldier-spending-time-with-his-wife-and-son-picture-id624911656.jpg);
+  background-repeat:no-repeat !important;
+  background-size: cover !important;
+  background-position:center center !important;
+  min-height:300px;
+}
+
+.workshops-3-main h4 {
+  font-size: 2em;
+}
+
+.workshops-3-main:hover {
+    background: #004080;
+}
+
+.workshops-3 {
+  padding: 0 auto;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-3-left{
+  padding: 30px;
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-3-right{
+  padding: 30px 50px 30px 50px;
+  float: right;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.workshops-3-bottom{
+  padding: 10px;
+  width: 100%;
+  clear: both;
 }
 
 .training-img {

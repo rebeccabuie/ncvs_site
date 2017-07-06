@@ -23,12 +23,12 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: advocacy_path,
-        title: 'Advocacy'
-      },
-      {
         url: treatment_path,
         title: 'Treatment'
+      },
+      {
+        url: workshop_path,
+        title: 'Workshops'
       },
       {
         url: training_path,

@@ -3,10 +3,10 @@ class PagesController < ApplicationController
     @posts = Blog.all
   end
 
-  def advocacy
+  def treatment
   end
 
-  def treatment
+  def workshops
   end
 
   def training
