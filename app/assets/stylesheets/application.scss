@@ -31,6 +31,7 @@ a:hover {
 }
 
 .masthead-brand {
+  padding: 20px;
   margin-bottom: 2rem;
 }
 
@@ -61,6 +62,7 @@ a:hover {
     float: left;
   }
   .nav-masthead {
+    padding: 20px;
     float: right;
   }
 }
@@ -77,29 +79,6 @@ body {
 body {
   color: #fff;
   text-align: center;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
 }
 
 
@@ -173,23 +152,11 @@ body {
  * Custom Styles
  */
 
- .banner2 {
-    padding-left: 60px;
-    padding-right: 60px;
- }
-
- .banner-text {
-    font-size: 6em;
-    text-align: center;
-    padding-top: 40px;
- }
-
- .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: auto;
-    background:rgba(0,0,0,0.6);
+hr {
+  height: 1px;
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+  border: none;
 }
 
  .flex-container-2 {
@@ -198,23 +165,6 @@ body {
     width: 100%;
     height: auto;
     background-color: white;
-}
-
- .flex-container-3 {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.flex-item {
-    border: 0.5px solid grey;
-    color: black;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
 }
 
 .flex-item-2 {
@@ -226,100 +176,6 @@ body {
 }
 
 .flex-item-2 a {
-    color: black;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
-}
-
-.flex-item-3-1 {
-    background:rgba(0,47,93,0.9);
-    text-align: left;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-.flex-item-3-1:hover {
-    background: #003366;
-}
-
-.flex-item-3-2 {
-    background:rgba(0,64,128,0.9);
-    text-align: left;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-.flex-item-3-2:hover {
-    background: #004080;
-}
-
-.flex-item-3-3 {
-    background:rgba(0,89,179,0.9);
-    text-align: left;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-.flex-item-3-3:hover {
-    background: #0059b3;
-}
-
-.flex-item-3-header {
-    background-color: #001a33;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    font-size: 2ßßem;
-}
-
-.flex-item-float-left {
-    float: left;
-    background-color: #001a33;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: auto;
-}
-
-.flex-item-float-right {
-    float: right;
-    background-color: #001a33;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    font-size: 1.5em;
-}
-
-.flex-item-4 {
-    background: white;
-    text-align: center;
-    color: black;
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    margin: 25px;
-}
-
-.flex-item-5 {
-    background: white;
-    text-align: center;
-    color: black;
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    margin: 25px;
-}
-
-.flex-item-button {
     color: black;
     width: 100%;
     height: auto;
@@ -344,22 +200,54 @@ body {
   padding: 0px 20px 0px 20px;
 }
 
-.resource-img {
-  padding-bottom: 20px;
-} 
+.whats-new {
+  background:rgba(0,0,0,0.6);
+  padding: 10px;
+}
+
+.whats-new-header {
+  background:rgba(0,0,0,0.6);
+  padding: 40px;
+}
+
+.video-column {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.banner-text {
+  font-size: 6em;
+}
+
+ .banner2 {
+    padding-left: 60px;
+    padding-right: 60px;
+ }
 
 .banner2-image {
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
 }
 
 .banner2-text {
+  font-size: 1em;
   padding: 10px;
 }
 
 .banner2-header {
-  padding: 10px;
+  padding-bottom: 20px;
+  font-size: 2.5em;
 }
+
+.video-container { 
+   position: relative; /* keeps the aspect ratio */ 
+   padding-bottom: 56.25%; /* fine tunes the video positioning */ 
+   padding-top: 60px; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
  .app-card-nav-header > .card {
   background: transparent;
@@ -392,7 +280,8 @@ body {
 }
 
 .app-card-container-header > .card {
-  margin: 200px;
+  margin-top: 200px;
+  margin-bottom: 100px;
   padding: 10px;
   background: transparent;
 }
@@ -411,6 +300,12 @@ body {
 
 .mission-statement {
   padding-bottom: 50px;
+}
+
+.app-card-container-statement-home > .card {
+  padding-top: 30px;
+  background-color: black;
+  
 }
 
 .app-card-container-statement > .card {
@@ -455,6 +350,21 @@ body {
   font-size: 4rem;
   background: #000000;
   padding: 20px;
+}
+
+.resource-header {
+  color: #ffffff;
+  font-size: 4rem;
+  background: #000000;
+  padding: 50px 20px 20px 20px;
+}
+
+.resource-boxes {
+  background:rgba(0,0,0,0.7);
+}
+
+.resource-box {
+  padding: 10px;
 }
 
 .image-link-boxes { 
@@ -514,12 +424,24 @@ body {
   margin-right: 15px;
 }
 
+.workshops {
+  background:rgba(0,0,0,0.6);
+}
+
+.workshop-header {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 4em;
+  padding: 20px;
+}
+
 .workshops-1-main {
   background:url(war-veteran-with-problems-picture-id490240282.jpg);
   background-repeat:no-repeat !important;
   background-size: cover !important;
   background-position:center center !important;
   min-height:300px;
+  margin-bottom: 10px;
 }
 
 .workshops-1-main h4 {
@@ -565,6 +487,8 @@ body {
   background-size: cover !important;
   background-position:center center !important;
   min-height:300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .workshops-2-main h4 {
@@ -610,6 +534,7 @@ body {
   background-size: cover !important;
   background-position:center center !important;
   min-height:300px;
+  margin-top: 10px;
 }
 
 .workshops-3-main h4 {
@@ -649,9 +574,86 @@ body {
   clear: both;
 }
 
+.workshops-training {
+  background:rgba(0,0,0,0.6);
+  padding: 20px;
+}
+
 .training-img {
     width: 100%;
     height: auto;
+}
+
+.workshops-training-left {
+  padding: 30px;
+  font-size: 1.5em;
+}
+
+.workshops-training-left h4{
+  font-size: 2em;
+}
+
+.studies-header {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.studies {
+  background-color: #000000;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.container h4 {
+  font-size: 2em;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text span{
+  color: #1557ff;
 }
 
 #background {
@@ -663,6 +665,26 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+}
+
+.static-page {
+  color: black;
+  padding: 20px;
+  text-align: left;
+}
+
+.static-page-header {
+  color: black;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.static-image {
+  padding-right: 20px;
+}
+
+.static-text {
+  padding-left: 20px;
 }
 
 .app-footer {

@@ -1,117 +1,177 @@
-<div class="app-card-container-header">
-  <div class="card">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="inner cover">
-          <h1 class="cover-heading pages-title">RESEARCH</h1>
-          <button type="button" class="btn btn-outline-secondary btn-lg">Survey Button</button>
-          <%= video_tag(
-          'Cropped-Banner-Flag.mp4',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: true,
-          )
-          %>
+<% @title="RESEARCH" %>
+
+<div class="row studies-header">
+  <div class="col-md-12">
+    <h1>Treatment & Assessment Studies</h1>
+  </div>
+</div>
+
+<div class="row studies">
+  <div class="col-md-4">
+    <div class="container">
+    <h4>Brief interventions for short-term suicide risk reduction in military populations</h4>
+      <%= image_tag 'studies-1.jpg' %>
+      <div class="overlay">
+        <div class="text">In this randomized clinical trial,<br>we will compare three commonly-used <br>crisis interventions with active duty <br>service members who present to an emergency <br>mental health service reporting current<br> suicidal ideation with intent to die.<br> It is expected that enrollment for this<br> study will begin in approximately one year.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", suicideriskreduction_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="container">
+    <h4>PRImary care Screening Methods (PRISM)</h4>
+      <%= image_tag 'studies-2.jpg' %>
+      <div class="overlay">
+        <div class="text">In this study, we are testing the ability of a new suicide<br>prevention screening instrument to predict future suicide <br>attempts among military personnel, retirees, and family <br>members seeking care from military primary care <br>clinics. We are additionally seeking to quantify the <br>proportion of individuals who are "missed" by existing <br>screening methods. <br>This study is currently underway.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", prism_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="container">
+    <h4>Brief cognitive-behavior therapy for managing suicidal behaviors</h4>
+      <%= image_tag 'studies-3a.jpg' %>
+      <div class="overlay">
+        <div class="text">In this randomized clinical trial, are comparing a brief-cognitive<br> behavioral therapy (B-CBT) to usual care in the treatment of <br>active duty service members who report suicidal ideation <br>with intent to die and/or a recent suicide attempt.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", cognitivebehaviortherapy_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row studies">
+  <div class="col-md-4">
+    <div class="container">
+      <h4>Mindfulness-Oriented Recovery Enhancement (MORE) to prevent opioid dependence in military personnel with chronic pain</h4>
+        <%= image_tag 'studies-3.jpg' %>
+        <div class="overlay">
+          <div class="text">In this treatment study, we are comparing the effectiveness of <br>Mindfulness-Oriented Recovery Enhancement (MORE) <br>to supportive group counseling for the prevention of opioid and <br>narcotic misuse and addiction among active duty Soldiers <br>with chronic pain conditions. MORE is a group therapy shown <br>to be effective for reducing chronic pain and opioid misuse in <br>civilian patients. This study is currently underway.<br>
+          <br>
+          <%= link_to "CLICK HERE FOR MORE INFO", more_path %>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="flex-container">
-  <h1 class="flex-item-3-header">Treatment & Assessment Studies</h1>
-</div>
-
-<div class="flex-container">
-  <div class="flex-item-5">
-    <%= image_tag "army-man-gm515593264-88565757.jpg", width: 400, alt: "Interventions", class: 'resource-img' %>
-    <h4>Brief interventions for short-term suicide risk reduction in military populations</h4>
-    <br>
-    <p>In this randomized clinical trial, we will compare three commonly-used crisis interventions with active duty service members who present to an emergency mental health service reporting current suicidal ideation with intent to die. It is expected that enrollment for this study will begin in approximately one year.</p>
-  </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "medical-doctor-evaluates-veteran-during-appointment-gm607480382-104094811.jpg", width: 400, alt: "medical", class: 'resource-img' %>
-    <h4>PRImary care Screening Methods (PRISM)</h4>
-    <br>
-    <p>In this study, we are testing the ability of a new suicide prevention screening instrument to predict future suicide attempts among military personnel, retirees, and family members seeking care from military primary care clinics. We are additionally seeking to quantify the proportion of individuals who are "missed" by existing screening methods. This study is currently underway.</p>
-  </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "depression-gm487842876-73707379.jpg", width: 400, alt: "MORE", class: 'resource-img' %>
-    <h4>Mindfulness-Oriented Recovery Enhancement (MORE) to prevent opioid dependence in military personnel with chronic pain</h4>
-    <br>
-    <p>In this treatment study, we are comparing the effectiveness of Mindfulness-Oriented Recovery Enhancement (MORE) to supportive group counseling for the prevention of opioid and narcotic misuse and addiction among active duty Soldiers with chronic pain conditions. MORE is a group therapy shown to be effective for reducing chronic pain and opioid misuse in civilian patients. This study is currently underway.</p>
+<div class="row studies-header">
+  <div class="col-md-12">
+    <h1>Pre-clinical Studies</h1>
   </div>
 </div>
 
-<div class="flex-container">
-  <h1 class="flex-item-3-header">Pre-clinical Studies</h1>
-</div>
-
-<div class="flex-container">
-  <div class="flex-item-5">
-    <%= image_tag "doctor-counselling-soldier-suffering-from-stress-gm177844709-23967063.jpg", width: 400, alt: "ESCAPE", class: 'resource-img' %>
+<div class="row studies">
+  <div class="col-md-4">
+    <div class="container">
     <h4>Evaluation of suicidality, cognitions, and pain experience (ESCAPE): Implications for CBT in military populations</h4>
-    <br>
-    <p>In this cross-sectional research study, we are investigating specific thought processes and cognitive styles associated with suicide risk among patients with chronic pain conditions.</p>
+      <%= image_tag 'studies-4.jpg' %>
+      <div class="overlay">
+        <div class="text">In this cross-sectional research study, we are investigating <br>specific thought processes and cognitive styles associated with <br>suicide risk among patients with chronic pain conditions.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", implicationsforcbtinmilitary_path %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "soldier-kneeling-at-grave-gm173198761-20663404.jpg", width: 400, alt: "Military Clinical population", class: 'resource-img' %>
+  <div class="col-md-4">
+    <div class="container">
     <h4>Guilt, shame, and suicide risk in a military clinical population</h4>
-    <br>
-    <p>In this pilot cross-sectional research study, we will investigate the experience of shame, guilt, and trauma among active duty military personnel receiving mental health care at several military clinics, and determine the interrelationship of these variables with suicide risk.</p>
+      <%= image_tag 'studies-5.jpg' %>
+      <div class="overlay">
+        <div class="text">In this pilot cross-sectional research study, we will investigate the <br>experience of shame, guilt, and trauma among active duty military <br>personnel receiving mental health care at several military clinics, <br>and determine the interrelationship of these variables with <br>suicide risk.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", suicideriskinmilitary_path %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "waiting-for-medevac-bird-picture-id603151186.jpg", width: 400, alt: "Traumatic Brain Injuries", class: 'resource-img' %>
+  <div class="col-md-4">
+    <div class="container">
     <h4>Traumatic brain injuries and suicide risk in deployed service members</h4>
-    <br>
-    <p>In this study, we are seeking to understand factors associated with post-traumatic stress disorder, traumatic brain injury, and suicide risk among several clinical and nonclinical samples of military personnel deployed to Iraq during 2009.</p>
+      <%= image_tag 'studies-6.jpg' %>
+      <div class="overlay">
+        <div class="text">In this study, we are seeking to understand factors associated <br>with post-traumatic stress disorder, traumatic brain injury, <br>and suicide risk among several clinical and nonclinical samples <br>of military personnel deployed to Iraq during 2009.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", braininjury_path %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="flex-container">
-  <h1 class="flex-item-3-header">Non-clinical Studies</h1>
+<div class="row studies-header">
+  <div class="col-md-12">
+    <h1>Non-clinical Studies</h1>
+  </div>
 </div>
 
-<div class="flex-container">
-  <div class="flex-item-5">
-    <%= image_tag "us-service-member-with-young-wife-and-dog-gm529078589-54285208.jpg", width: 400, alt: "Couple Laboratory for Observational StudiEs", class: 'resource-img' %>
+<div class="row studies">
+  <div class="col-md-4">
+    <div class="container">
     <h4>The National Center for Veterans Studies and Couple Laboratory for Observational StudiEs (CLOSE)</h4>
-    <br>
-    <p>ISeeks participants to help us learn about links between risk for suicide and the ways that partners in committed relationships couples have conversations about their relationships and what they find meaningful in life.</p>
+      <%= image_tag 'studies-7.jpg' %>
+      <div class="overlay">
+        <div class="text">ISeeks participants to help us learn about links between risk <br>for suicide and the ways that partners in committed <br>relationships couples have conversations about their <br>relationships and what they find meaningful in life.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", closelab_path %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "american-soldier-with-books-gm451630473-30420768.jpg", width: 400, alt: "Predictors of academic success", class: 'resource-img' %>
+  <div class="col-md-4">
+    <div class="container">
     <h4>Predictors of academic success among college student veterans</h4>
-    <br>
-    <p>In this survey, we will assess veterans' experiences both on and off college and university campuses in order to identify factors that contribute to veteran success in school.</p>
+      <%= image_tag 'studies-8.jpg' %>
+      <div class="overlay">
+        <div class="text">In this survey, we will assess veterans' experiences both on <br>and off college and university campuses in order to identify <br>factors that contribute to veteran success in school.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", academicsuccess_path %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="flex-item-5">
-    <%= image_tag "us-soldier-and-combat-helicopter-approaching-gm637754142-113927761.jpg", width: 400, alt: "nalyses of risk and protective factors", class: 'resource-img' %>
+  <div class="col-md-4">
+    <div class="container">
     <h4>Analyses of risk and protective factors for trauma-related events</h4>
-    <br>
-    <p>In this cross-sectional study, we are seeking to identify protective factors associated with a range of traumatic experiences among college students and active duty military personnel.</p>
+      <%= image_tag 'studies-9.jpg' %>
+      <div class="overlay">
+        <div class="text">In this cross-sectional study, we are seeking to identify <br>protective factors associated with a range of traumatic <br>experiences among college students and active duty <br>military personnel.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", protectivefactors_path %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="flex-container">
-  <div class="flex-item-5">
-    <%= image_tag "two-soldiers-posing-on-camera-in-the-middle-east-gm157186552-2066643.jpg", width: 400, alt: "Special Operations Forces", class: 'resource-img' %>
+<div class="row studies">
+  <div class="col-md-4">
+    <div class="container">
     <h4>Risk and protective factors for PTSD and social-occupational impairment among Special Operations Forces (SOF) Personnel</h4>
-    <br>
-    <p>In this longitudinal surveillance study, we will prospectively investigate individual, social, operational, and environmental risk and protective factors associated with social-occupational impairment, resiliency, and psychological symptoms among Special Operations Forces (SOF) personnel.</p>
-  </div>
-  <div class="flex-item-5">
-    <%= image_tag "ranger-in-the-mountains-gm619757918-108161843.jpg", width: 400, alt: "NCVS Collaborations", class: 'resource-img' %>
+      <%= image_tag 'studies-10.jpg' %>
+      <div class="overlay">
+        <div class="text">In this longitudinal surveillance study, we will prospectively <br>investigate individual, social, operational, and environmental <br>risk and protective factors associated with social-occupational <br>impairment, resiliency, and psychological symptoms among <br>Special Operations Forces (SOF) personnel.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", factorsforptsd_path %>
+        </div>
+      </div>
+    </div>
+  </div>  <div class="col-md-4">
+    <div class="container">
     <h4>NCVS Collaborations</h4>
-    <br>
-    <p>The NCVS is actively engaged in collaborative research efforts with various sites within the Department of Defense and the Department of Veterans Affairs, and with other researchers investigating military-related issues and topics.</p>
+      <%= image_tag 'studies-11.jpg' %>
+      <div class="overlay">
+        <div class="text">The NCVS is actively engaged in collaborative research efforts <br>with various sites within the Department of Defense and the <br>Department of Veterans Affairs, and with other researchers <br>investigating military-related issues and topics.<br>
+        <br>
+        <%= link_to "CLICK HERE FOR MORE INFO", ncvscollaborations_path %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-

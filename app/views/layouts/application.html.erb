@@ -24,6 +24,8 @@
 
           <%= render "shared/application_nav" %>
 
+          <%= render "shared/application_header" unless @disable_header %>
+
           <%= yield %>
 
           <%= render "shared/application_footer" %>

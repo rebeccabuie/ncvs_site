@@ -1,23 +1,4 @@
-<div class="app-card-container-header">
-  <div class="card">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="inner cover">
-          <h1 class="cover-heading pages-title">TREATMENT</h1>
-          <button type="button" class="btn btn-outline-secondary btn-lg">Survey Button</button>
-          <%= video_tag(
-          'Cropped-Banner-Flag.mp4',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: true,
-          )
-          %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<% @title="TREATMENT" %>
 
 <div class="row treatment-header">
   <div class="col-md-12">
@@ -28,13 +9,99 @@
 <div class="image-link-container">
   <div class="row image-link-boxes">
     <div class="col-md-6">
-      <%= image_tag "american-soldier-on-the-phone-picture-id487459342.jpg", width: 700, alt: "veterans seeking help" %>
+      <%= image_tag "american-soldier-on-the-phone-picture-id487459342.jpg", width: 600, alt: "veterans seeking help" %>
       <h1>VETERANS SEEKING HELP</h1>
     </div>
     <div class="col-md-6">
 
-      <%= image_tag "man-at-the-psychotherapist-picture-id610262070.jpg", width: 700, alt: "health providers" %>
+      <%= image_tag "man-at-the-psychotherapist-picture-id610262070.jpg", width: 600, alt: "health providers" %>
       <h1>HEALTH PROVIDERS</h1>
     </div>
+  </div>
+</div>
+
+<div class="row resource-header">
+  <div class="col-md-12">
+    <h1 class="resource-header">Here are some resources:</h1>
+  </div>
+</div>
+
+<div class="resource-boxes">
+  <div class="row resources">
+    <div class="col-sm-3">
+      <h2 class="resource-box">Job Placement Assistance</h2>
+        <%= image_tag "woman-explaining-the-plan-to-office-team-picture-id687920320.jpg", width: 320, alt: "mental health" %>
+        <br>
+        <br>
+        <p><a href="http://www.lsiwins.com/jttap">Job Training, Technology and Placement</a></p>
+    </div>
+    <div class="col-sm-3">
+      <h2 class="resource-box">Mental Health Treatment Locator</h2>
+        <%= image_tag "depression-after-war-picture-id501578828.jpg", width: 320, alt: "mental health" %>
+        <br>
+        <br>
+        <p><a href="https://www2.va.gov/directory/guide/ptsd_flsh.asp">VA Posttraumatic Stress Disorder (PTSD) Programs</a></p>
+        <p><a href="https://www2.va.gov/directory/guide/SUD_flsh.asp?isFlash=1">VA Substance Use Disorder (SUD) Programs</a></p>
+        <p><a href="https://www.helppro.com/Help Pro Therapist Finder for the Military">Help Pro Therapist Finder for the Military</a></p>
+    </div>
+    <div class="col-sm-3">
+      <h2 class="resource-box">National Service Academy</h2>
+          <%= image_tag "sergeant-of-marines-picture-id183817422.jpg", width: 320, alt: "national service academy" %>
+        <br>
+        <br>
+        <p><a href="http://veterans.utah.edu/_documents/national-service-academy-article-8-1-12.pdf">Designing a National Service Academy (paper by Prof. James Holbrook)</a></p>
+        <p><u>National Service Academy Courses</u></p>
+        <p><a href="http://nationalstrategicnarrative.org/">National Strategic Narrative</a></p>
+    </div>
+    <div class="col-sm-3">
+       <h2 class="resource-box">Other<br>Resources</h2>
+          <%= image_tag "military-man-in-uniform-and-civil-man-in-suit-shaking-hands-with-on-picture-id675301570.jpg", width: 320, alt: "resources" %>
+        <br>
+        <br>
+        <p><u>How to Help Military Families for Higher Education</u></p>
+        <p><u>ManTherapy.org</u></p>
+        <p><u>David Rudd's House Testimony</u></p>
+        <p><u>David Rudd's Senate Testimony</u></p>
+    </div>
+  </div>
+</div>
+
+<div class="flex-container-2">
+  <div class="flex-item-2">
+    <h2>NCVS Books & Publications</h2>
+    <h4>Books Authored/Edited by NCVS Staff</h4>
+  </div>
+</div>
+
+<div class="flex-container-2">
+  <div class="flex-item-2">
+      <%= image_tag "Cognitive-Behavioral-Therapy.jpg", width: 200, alt: "Cognitive-Behavioral-Therapy" %>
+      <br>
+      <br>
+      <p><a href="https://www.amazon.com/Cognitive-Behavioral-Therapy-Preventing-Attempts/dp/0415857171/ref=sr_1_1?ie=UTF8&qid=1432754315&sr=8-1&keywords=preventing+suicide+attempts">Cognitive Behavioral Therapy for Preventing Suicide Attempts: A Guide to Brief Treatments Across Clinical Settings (Clinical Topics in Psychology and Psychiatry)</a></p>
+  </div>
+  <div class="flex-item-2">
+      <%= image_tag "The-Assessment-And-Management-of-Suicidality.jpg", width: 200, alt: "The-Assessment-And-Management-of-Suicidality" %>
+      <br>
+      <br>
+      <p><a href="https://www.amazon.com/Assessment-Management-Suicidality-Practitioners-Resource/dp/1568871058/ref=sr_1_1?s=books&ie=UTF8&qid=1337283038&sr=1-1">The Assessment And Management of Suicidality (Practitioner's Resource)</a></p>
+  </div>
+  <div class="flex-item-2">
+    <%= image_tag "Managing-Suicide-Risk-in-Primary-Care.jpg", width: 200, alt: "Managing-Suicide-Risk-in-Primary-Care" %>
+    <br>
+    <br>
+    <p><a href="https://www.amazon.com/Managing-Suicide-Risk-Primary-Care/dp/0826110711">Managing Suicide Risk in Primary Care</a></p>
+  </div>
+  <div class="flex-item-2">
+    <%= image_tag "Suicide-Science-Expanding-the-Boundaries.jpg", width: 200, alt: "Suicide-Science-Expanding-the-Boundaries" %>
+    <br>
+    <br>
+    <p><a href="https://www.amazon.com/Suicide-Science-Boundaries-Thomas-Joiner/dp/1441949801/ref=sr_1_6?s=books&ie=UTF8&qid=1337283038&sr=1-6">Suicide Science: Expanding the Boundaries</a></p>
+  </div>
+  <div class="flex-item-2">
+    <%= image_tag "Treating-Suicidal-Behavior.jpg", width: 200, alt: "Treating-Suicidal-Behavior" %>
+    <br>
+    <br>
+    <p><a href="https://www.amazon.com/Treating-Suicidal-Behavior-Time-Limited-Practitioners/dp/1593851006/ref=sr_1_3?s=books&ie=UTF8&qid=1337283038&sr=1-3">Treating Suicidal Behavior: An Effective, Time-Limited Approach (Treatment Manuals for Practitioners)</a></p>
   </div>
 </div>
