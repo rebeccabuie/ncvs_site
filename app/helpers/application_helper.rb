@@ -31,10 +31,6 @@ module ApplicationHelper
         title: 'Workshops'
       },
       {
-        url: training_path,
-        title: 'Training'
-      },
-      {
         url: research_path,
         title: 'Research'
       },

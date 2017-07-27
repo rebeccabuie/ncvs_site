@@ -210,9 +210,27 @@ hr {
   padding: 40px;
 }
 
+.highlight-column {
+  border: 1px solid white;
+  margin: 15px;
+  padding: 10px;
+  background:rgba(0,0,0,0.7);
+}
+
 .video-column {
+  border: 1px solid white;
   padding-left: 60px;
   padding-right: 60px;
+  margin: 15px;
+  padding: 10px;
+  background:rgba(0,0,0,0.7);
+}
+
+.news-column {
+  border: 1px solid white;
+  margin: 15px;
+  padding: 10px;
+  background:rgba(0,0,0,0.7);
 }
 
 .banner-text {
@@ -237,6 +255,7 @@ hr {
 .banner2-header {
   padding-bottom: 20px;
   font-size: 2.5em;
+  border-bottom: 1px solid white;
 }
 
 .video-container { 
@@ -305,14 +324,12 @@ hr {
 .app-card-container-statement-home > .card {
   padding-top: 30px;
   background-color: black;
-  
 }
 
 .app-card-container-statement > .card {
   border-top: 1px solid #ffffff;
   padding-top: 30px;
   background-color: black;
-  
 }
 
 .statement-text {
@@ -344,6 +361,7 @@ hr {
 
 .image-link-container {
   background: #000000;
+  padding-bottom: 40px;
 }
 
 .treatment-header {
@@ -352,15 +370,14 @@ hr {
   padding: 20px;
 }
 
+.resource-main{
+  background:rgba(0,0,0,0.8);
+}
+
 .resource-header {
   color: #ffffff;
   font-size: 4rem;
-  background: #000000;
-  padding: 50px 20px 20px 20px;
-}
-
-.resource-boxes {
-  background:rgba(0,0,0,0.7);
+  padding: 20px 20px 50px 20px;
 }
 
 .resource-box {
@@ -424,173 +441,59 @@ hr {
   margin-right: 15px;
 }
 
-.workshops {
-  background:rgba(0,0,0,0.6);
-}
-
-.workshop-header {
+.workshop-header h1 {
+  padding-top: 10px;
+  font-size: 3em;
   background-color: #000000;
-  color: #ffffff;
-  font-size: 4em;
-  padding: 20px;
 }
-
-.workshops-1-main {
-  background:url(war-veteran-with-problems-picture-id490240282.jpg);
-  background-repeat:no-repeat !important;
-  background-size: cover !important;
-  background-position:center center !important;
-  min-height:300px;
-  margin-bottom: 10px;
+.header-work {
+  background-color: #000000;
 }
-
-.workshops-1-main h4 {
-  font-size: 2em;
+.workshops-main {
+  padding: 20px 20px 70px 20px;
+  background-color: #000000;
 }
-
-.workshops-1-main:hover {
-    background: #003366;
-}
-
-.workshops-1 {
-  padding: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-.workshops-1-left{
-  padding: 30px 60px 30px 60px;
-  float: left;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-  height: auto;
-}
-
-.workshops-1-right{
-  padding: 30px;
-  float: right;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-1-bottom{
+.workshop-box {
   padding: 10px;
-  width: 100%;
-  clear: both;
+  height: 670px;
+  width: 390px;
+  position: relative;
 }
-
-.workshops-2-main {
-  background:url(speaker-at-business-convention-and-presentation-picture-id498565457.jpg);
-  background-repeat:no-repeat !important;
-  background-size: cover !important;
-  background-position:center center !important;
-  min-height:300px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.workshops-2-main h4 {
-  font-size: 2em;
-}
-
-.workshops-2-main:hover {
-    background: #004080;
-}
-
-.workshops-2 {
-  padding: 0 auto;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-2-left{
-  padding: 30px;
-  float: left;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-2-right{
-  padding: 30px 50px 30px 50px;
-  float: right;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-2-bottom{
+.workshop-img {
   padding: 10px;
-  width: 100%;
-  clear: both;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.workshop-text {
+  padding: 28px 15px 15px 15px;
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 1em;
+}
+.workshop-text span {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5px;
 }
 
-.workshops-3-main {
-  background:url(soldier-spending-time-with-his-wife-and-son-picture-id624911656.jpg);
-  background-repeat:no-repeat !important;
-  background-size: cover !important;
-  background-position:center center !important;
-  min-height:300px;
-  margin-top: 10px;
-}
-
-.workshops-3-main h4 {
-  font-size: 2em;
-}
-
-.workshops-3-main:hover {
-    background: #004080;
-}
-
-.workshops-3 {
-  padding: 0 auto;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-3-left{
-  padding: 30px;
-  float: left;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-3-right{
-  padding: 30px 50px 30px 50px;
-  float: right;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.workshops-3-bottom{
-  padding: 10px;
-  width: 100%;
-  clear: both;
-}
-
-.workshops-training {
-  background:rgba(0,0,0,0.6);
-  padding: 20px;
-}
-
-.training-img {
-    width: 100%;
-    height: auto;
+.workshop-training-main {
+  background:rgba(0,0,0,0.8);
+  padding: 20px; 
 }
 
 .workshops-training-left {
-  padding: 30px;
-  font-size: 1.5em;
+  padding: 20px;
 }
 
-.workshops-training-left h4{
+.workshops-training-left span{
+  padding: 20px;
   font-size: 2em;
+}
+
+.workshops-training-right {
+  padding: 0px;
 }
 
 .studies-header {
@@ -695,6 +598,53 @@ hr {
 .social-media-links {
   padding: 10px;
 }
+
+.press-main {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+.press-list {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: left;
+  color: #000000;
+}
+
+.press-header{
+  text-align: center;
+  padding: 30px;
+}
+
+.press-grey {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.press-link {
+  color: #2d5385;
+}
+
+.press-grey span {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.press-white {
+  background-color: #ffffff;
+  padding: 30px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.press-white span {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
 
 .footer-logo {
   padding: 20px;

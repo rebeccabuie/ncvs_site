@@ -10,9 +10,6 @@ class PagesController < ApplicationController
   def workshops
   end
 
-  def training
-  end
-
   def research
   end
 
