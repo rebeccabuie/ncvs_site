@@ -1,7 +1,7 @@
 <div class="footer"> 
   <div class="row">
     <div class="col-md-3">
-      <h4>WHERE WE ARE</h4>
+      <p class="footer-link-header">WHERE WE ARE</p>
       <p>NATIONAL CENTER FOR VETERANS STUDIES
       332 S 1400 E, BUILDING 73
       ROOM 4, SLC, UT 84112
@@ -9,23 +9,34 @@
       CONTACT</p>
     </div>
     <div class="col-md-3">
-      <h4>OTHER LINKS</h4>
-      <ul>
-        <li>NONDISCRIMINATION & ACCESSIBILITY</li>
-        <li>DISCLAIMER</li>
-        <li>PRIVACY</li>
-        <li>CREDITS & ATTRIBUTIONS</li>
-      </ul>
+      <p class="footer-link-header">OTHER LINKS</p>
+        <p class="footer-links">NONDISCRIMINATION & ACCESSIBILITY</p>
+        <p class="footer-links">DISCLAIMER</p>
+        <p class="footer-links">PRIVACY</p>
+        <p class="footer-links">CREDITS & ATTRIBUTIONS</p>
     </div>
     <div class="col-md-3">
-      <h4>STAY CONNECTED</h4>
-      <ul>
-        <li class="social-media-links"><%= image_tag "facebook-icon-40.png", width: 40, alt: "facebook link" %></li>
-        <li class="social-media-links"><%= image_tag "Twitter-icon-40.png", width: 40, alt: "twitter link" %></li>
-      </ul>
+      <p class="footer-link-header">STAY CONNECTED</p>
+      <p><a href="https://www.facebook.com/Veterans.Studies">
+      <%= image_tag "facebook-icon-40.png", width: 20, alt: "facebook link", class: "social-media-links" %>
+      </a>
+      <a href="https://twitter.com/uutah">
+      <%= image_tag "Twitter-icon-40.png", width: 20, alt: "twitter link", class: "social-media-links" %>
+      </a>
+      <a href="https://go.utah.edu/cas/login?service=https%3A%2F%2Fgate.acs.utah.edu%2Fpsc%2Fplprod%2FEMPLOYEE%2FEMPL%2Fc%2FNUI_FRAMEWORK.PT_LANDINGPAGE.GBL">
+      <%= image_tag "cis-icon-40.png", width: 20, alt: "cis link", class: "social-media-links" %>
+      </a>
+      <a href="https://www.umail.utah.edu/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwww.umail.utah.edu%2fowa%2f">
+      <%= image_tag "umail-icon-40.png", width: 20, alt: "cis link", class: "social-media-links" %>
+      </a>
+      <a href="https://www.linkedin.com/groups/4263405/profile">
+      <%= image_tag "linkedin-icon-40.png", width: 20, alt: "cis link", class: "social-media-links" %>
+      </a>
+    </p>
+    <button type="button" class="btn btn-danger btn-sm">Donate</button>
     </div>
     <div class="col-md-3 footer-logo">
-      <%= image_tag "NCVS-Logo.png", width: 400, alt: "NCVS Logo" %>
+      <%= image_tag "NCVS-Logo.png", width: 250, alt: "NCVS Logo" %>
     </div>
         <p class="app-footer">@ 2017 | National Center for Veteran Studies</p>
   </div>

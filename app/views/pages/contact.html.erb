@@ -1,7 +1,16 @@
-<h1>Pages#contact</h1>
+<% @title="CONTACT" %>
 
-<p><%= number_to_phone "5555555555" %></p>
 
-<p><%= number_to_currency "18450" %></p>
-
-<p><%= number_with_delimiter "15087263847623" %></p>
+<div class="contact">
+  <div class="row">
+    <div class="col-md-6 contact-image">
+      <%= image_tag 'contact-us.jpg', width: 400%>
+    </div>
+    <div class="col-md-6 contact-text">
+      NATIONAL CENTER FOR VETERANS STUDIES<br>
+      332 S 1400 E, BUILDING 73 ROOM 4<br>
+      SLC, UT 84112<br>
+      801-587-7978
+    </div>
+  </div>
+</div>

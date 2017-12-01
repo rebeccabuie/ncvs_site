@@ -21,19 +21,19 @@
   </div>
 </div>
 
-<div class="app-card-container-statement-home">
+<div class="statement-home">
   <div class="card">
-    <div class="row">
+    <div class="row app-card-container-statement-home">
       <div class="col-md-3">
-        <%= image_tag "Soldier.jpg", width: 250, alt: "statement block" %>
+        <%= image_tag "Soldier.png", width: 350, alt: "statement block", class: 'statement-woman'%>
       </div>
       <div class="col-md-8 statement-text">
         <h2 class="mission-statement">Our Mission: Conduct research, education, outreach, and advocacy for improving the lives of military personnel, veterans, and their families.</h2>
 
-        <h4>Please help us continue to support veterans and the National Center for Veterans Studies and make a donation today.</h4>
+        <p>Please help us continue to support veterans and the National Center for Veterans Studies and make a donation today.</p>
 
         <p class="lead">
-        <%= link_to "Donate Now", about_path, class: "btn btn-lg btn-secondary" %>
+        <%= link_to "Donate Now", about_path, class: "btn btn-md btn-secondary" %>
       </p>
       </div>
     </div>
@@ -50,26 +50,25 @@
 <div class="whats-new">
   <div class="row justify-content-center">
     <div class="col-sm-3 highlight-column">
-      <h4 class="banner2-header">Highlighted Project</h4>
-      <%= image_tag "RandR.jpg", width: 350, alt: "r and r block", class: 'banner2-image'%>
-      <h4>R AND R PROGRAM</h4>
+      <h4 class="banner2-header">Highlights</h4>
+      <%= image_tag "RandR.jpg", width: 250, alt: "r and r block", class: 'banner2-image'%>
+      <h4>R & R PROGRAM</h4>
       <p class="banner2-text">NCVS teams up with the National Ability Center to offer a 2 week program free of charge for military personnel with PTSD and their families to stay in Park City, receive empirically based treatment, and enjoy the natural wonders Utah has to offer. For inquiries, please email NCVS@utah.edu or call 801-587-7978.</p>
       <p class="lead">
       <%= link_to "Read More", about_path, class: "btn btn-outline-secondary" %>
       </p>
       <hr>
-      <h4 class="banner2-header">Extended Free Training</h4>
-      <%= image_tag "counselor-talks-with-soldier-during-therapy-picture-id607480336", width: 350, alt: "r and r block", class: 'banner2-image'%>
-      <h4>FREE BRIEF COGNITIVE BEHAVIORAL THERAPY FOR SUICIDE RISK TRAINING IN SALT LAKE CITY</h4>
-      <p class="banner2-text">Dr. Craig Bryan will teach a free training for mental health providers on BCBT for suicide risk in Salt Lake City.<a href="http://usmilitarymatters.org/"> Read more ></a></p>
+      <%= image_tag "counselor.jpg", width: 250, alt: "r and r block", class: 'banner2-image'%>
+      <h4>USMILITARYMATTERS.ORG</h4>
+      <p class="banner2-text">Dr. Craig Bryan will teach a free training for mental health providers.<a href="http://usmilitarymatters.org/"> Read more ></a></p>
       <br>
-      <%= link_to "LEARN MORE ABOUT OUR PROJECTS", research_path, class: "btn btn-outline-secondary"%>
+      <%= link_to "LEARN MORE", research_path, class: "btn btn-outline-secondary"%>
       <p class="lead">
       </p>
     </div>
     <div class="col-sm-3 news-column">
       <h4 class="banner2-header">In the News</h4>
-      <%= image_tag "ravellcall-image.jpg", width: 350, alt: "news", class: 'banner2-image'%>
+      <%= image_tag "ravellcall-image.jpg", width: 250, alt: "news", class: 'banner2-image'%>
       <h4>NATIONAL PROGRAM HELPS SOLDIERS LEARN TO COPE WITH PTSD</h4>
       <p class="banner2-text">A recent spotlight on the R&R Program, designed for service members and veterans with post-traumatic stress disorder (PTSD). Its aim is to help them lead stable lives and, in the most extreme cases, prevent suicide.</p>
       <br>
@@ -77,8 +76,8 @@
       <%= link_to "Read More", about_path, class: "btn btn-outline-secondary" %>
       </p>
       <hr>
-      <%= image_tag "green-beret-in-action-picture-id584861864.jpg", width: 350, alt: "news", class: 'banner2-image'%>
-      <h4><a href="https://csbs.utah.edu/_documents/cognitivebehavior-suicide-article.pdf">COGNITIVE-BEHAVIORAL THERAPY AND MILITARY SUICIDE PREVENTION</a></h4>
+      <%= image_tag "green-beret-in-action-picture-id584861864.jpg", width: 250, alt: "news", class: 'banner2-image'%>
+      <h4><a href="https://csbs.utah.edu/_documents/cognitivebehavior-suicide-article.pdf"><span style="font-size: 1.5rem">BRIEF COGNITIVE BEHAVIORAL THERAPY AND MILITARY SUICIDE PREVENTION</span></a></h4>
       <h4></h4>
       <p class="banner2-text">NCVS Director Craig Bryan's latest research evaluates the effectiveness of brief cognitive-behavioral therapy for the prevention of suicide attempts in military personnel.</p>
       <br>
@@ -88,6 +87,10 @@
     </div>
     <div class="col-sm-3 video-column">
       <h4 class="banner2-header">Featured Videos</h4>
+      <div class="video-container">         
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lie_bLmu4xM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="banner2-text">RIDE TO ZERO 2017 TEASER</p>
       <div class="video-container">         
         <iframe width="200" height="113" src="https://www.youtube.com/embed/c9pKX3PgK-k" frameborder="0" allowfullscreen></iframe>
       </div>

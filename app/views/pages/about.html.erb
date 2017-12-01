@@ -3,16 +3,16 @@
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>DIRECTORS</span></h1>
+      <h2 class="section-header"><span>DIRECTORS</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
-  <div class="col-md-4">
-    <%= image_tag "craig-bryan-main.jpg", width: 300, alt: "craig-bryan" %>
-    <h3>Craig J. Bryan</h3>
-    <h4>Executive Director</h4>
+  <div class="col-md-3">
+    <%= image_tag "craig-bryan-main.jpg", width: 200, alt: "craig-bryan", class: 'about-img'%>
+    <h4>Craig J. Bryan, PsyD, ABPP</h4>
+    <h5>Executive Director</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -34,11 +34,10 @@
       </div>
     </p>
   </div>
-  <div class="col-md-4 about-section-border">
-
-    <%= image_tag "AnnaBelle-Bryan.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
-    <h3>AnnaBelle O. Bryan</h3>
-    <h4>Director of Education and Outreach</h4>
+  <div class="col-md-3 about-section-border">
+    <%= image_tag "AnnaBelle-Bryan.jpg", width: 200, alt: "AnnaBelle-Bryan", class: 'about-img' %>
+    <h4>AnnaBelle O. Bryan, MS</h4>
+    <h5>Director of Operations</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -60,11 +59,10 @@
       </div>
     </p>
   </div>
-
-  <div class="col-md-4">
-    <%= image_tag "Feea-Leifker.jpg", width: 300, alt: "AnnaBelle-Bryan" %>
-    <h3>Feea Leifker, Ph.D., M.P.H.</h3>
-    <h4>Director of Clinical Services</h4>
+  <div class="col-md-3">
+    <%= image_tag "Feea-Leifker.jpg", width: 200, alt: "AnnaBelle-Bryan", class: 'about-img' %>
+    <h4>Feea Leifker, PhD, MPH</h4>
+    <h5>Director of Clinical Services</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -84,16 +82,41 @@
       </div>
     </p>
   </div>
-</div>
 
+  <div class="col-md-3">
+      <%= image_tag "no-photo.jpg", width: 200, alt: "david-rozek", class: 'about-img' %>
+      <h4>David Rozek, PhD</h4>
+      <h5>Director of Training</h5>
+      <p>
+        <button class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#david-rozek"
+          aria-expanded="false"
+          aria-controler="david-rozek">
+          Read More
+        </button>
+      </p>
+      <p>
+        <div class="collapse" id="david-rozek">
+          <div class="card card-block">
+            <p>
+            Dr. Rozek is a clinical psychologist and holds a primary appointment at the University of Utah in the Department of Psychiatry. He received his PhD from the University of Notre Dame and completed his residency at the Orlando Veterans Affairs Medical Center. Dr. Rozek’s clinical and research expertise is in cognitive and behavioral therapies for depression, PTSD, and anxiety related disorders.
+            </p>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
+</div>
 <div class="app-card-container-statement">
   <div class="card">
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "NCVS-Group-photo.jpg", alt: "group photo", class: 'group-img'%>
+        <%= image_tag "NCVS-Group-photo.jpg", width: 400, alt: "group photo", class: 'group-img'%>
       </div>
       <div class="col-md-8 about-text">
-        <h2 class="about-statement">To engage in research, education, engagement, and advocacy to improve the lives of military personnel, veterans, and their families.</h2>
+        <h4 class="about-statement">To engage in research, education, engagement, and advocacy to improve the lives of military personnel, veterans, and their families.</h4>
       </div>
     </div>
   </div>
@@ -102,16 +125,40 @@
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>MANAGERS</span></h1>
+      <h2 class="section-header"><span>MANAGERS</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
+<div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "nick-oakeyfrost", class: 'about-img' %>
+      <h4>Diana Fuessel-Herrmann</h4>
+      <h5>Executive Assistant</h5>
+      <p>
+        <button class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nick-oakeyfrost"
+          aria-expanded="false"
+          aria-controler="nick-oakeyfrost">
+          Read More
+        </button>
+      </p>
+      <p>
+        <div class="collapse" id="nick-oakeyfrost">
+          <div class="card card-block">
+            <p>
+            Get Bio
+            </p>
+          </div>
+        </div>
+      </p>
+  </div>
   <div class="col-md-3">
-    <%= image_tag "nick-oakeyfrost.jpg", width: 300, alt: "nick-oakeyfrost" %>
-      <h3>Nick Oakey-Frost, B.A.</h3>
-      <h4>Research Manager</h4>
+    <%= image_tag "nick-oakeyfrost.jpg", width: 200, alt: "nick-oakeyfrost", class: 'about-img' %>
+      <h4>Nick Oakey-Frost, BA</h4>
+      <h5>Research Manager</h5>
       <p>
         <button class="btn btn-primary"
           type="button"
@@ -132,45 +179,21 @@
         </div>
       </p>
   </div>
-  <div class="col-md-3">
-    <%= image_tag "anastasia-najarian.jpg", width: 300, alt: "anastasia-najarian" %>
-    <h3>Anastasia Najarian</h3>
-    <h4>Engagement Manager</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#anastasia-najarian"
-        aria-expanded="false"
-        aria-controler="anastasia-najarian">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="anastasia-najarian">
-        <div class="card card-block">
-          <p>
-          Anastasia has a unique combination of education and experience in strategic communication, public relations and psychology. She worked with veterans, youth and prisoners for 20 years who struggled with trauma, addiction and self-sabotage to change their lives. She served as Director of In-Home Services for a residential treatment center for youth. As Utah Director for The International Coalition for Drug Awareness she researched adverse drug effects and provided defense mitigation for drug related crimes.
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>RESEARCH FELLOWS</span></h1>
+      <h2 class="section-header"><span>RESEARCH FELLOWS</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-3">
-    <%= image_tag "eric-garland.jpg", width: 300, alt: "eric-garland" %>
-    <h3>Eric Garland</h3>
-    <h4>Research Fellow</h4>
+    <%= image_tag "eric-garland.jpg", width: 200, alt: "eric-garland", class: 'about-img' %>
+    <h4>Eric Garland, PhD, LCSW</h4>
+    <h5>Research Fellow</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -192,9 +215,9 @@
     </p>
   </div>
   <div class="col-md-3">
-    <%= image_tag "james-griffith.jpg", width: 300, alt: "james-griffith" %>
-    <h3>Eric Garland</h3>
-    <h4>Research Fellow</h4>
+    <%= image_tag "james-griffith.jpg", width: 200, alt: "james-griffith", class: 'about-img' %>
+    <h4>James Griffith, PhD</h4>
+    <h5>Research Fellow</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -220,16 +243,16 @@
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>POST DOCTORAL FELLOWS</span></h1>
+      <h2 class="section-header"><span>POST DOCTORAL FELLOWS</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-3">
-    <%= image_tag "alexis-may.jpg", width: 300, alt: "alexis-may" %>
-    <h3>Alexis May, PhD</h3>
-    <h4>Post-Doc Research Fellow</h4>
+    <%= image_tag "alexis-may.jpg", width: 200, alt: "alexis-may", class: 'about-img' %>
+    <h4>Alexis May, PhD</h4>
+    <h5>Post-Doctoral Fellow</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -251,391 +274,144 @@
     </p>
   </div>
   <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "david-rozek" %>
-    <h3>David Rozek, PsyD</h3>
-    <h4>Pots-Doc Research Fellow</h4>
+    <%= image_tag "no-photo.jpg", width: 200, alt: "alexis-may", class: 'about-img' %>
+    <h4>Aviva Sinclair, PhD</h4>
+    <h5>Post-Doctoral Fellow</h5>
     <p>
       <button class="btn btn-primary"
         type="button"
         data-toggle="collapse"
-        data-target="#david-rozek"
+        data-target="#alexis-may"
         aria-expanded="false"
-        aria-controler="david-rozek">
+        aria-controler="alexis-may">
         Read More
       </button>
     </p>
     <p>
-      <div class="collapse" id="david-rozek">
+      <div class="collapse" id="alexis-may">
         <div class="card card-block">
           <p>
-          Dr. Rozek is a clinical psychologist and holds a primary appointment at the University of Utah in the Department of Psychiatry. He received his PhD from the University of Notre Dame and completed his residency at the Orlando Veterans Affairs Medical Center. Dr. Rozek’s clinical and research expertise is in cognitive and behavioral therapies for depression, PTSD, and anxiety related disorders.
+          Get bio
           </p>
         </div>
       </div>
     </p>
   </div>
 </div>
+</div>
+  
 
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>RESEARCH THERAPISTS</span></h1>
+      <h2 class="section-header"><span>RESEARCH STAFF</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "david-rozek" %>
-    <h3>Sean Williams, LMSW</h3>
-    <h4>Research Evaluator</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#sean-williams"
-        aria-expanded="false"
-        aria-controler="sean-williams">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="sean-williams">
-        <div class="card card-block">
-          <p>
-          Sean is a clinical social worker earned his MSW from The Ohio State University. He has worked in a number of clinical settings as a mental health clinician, to include the Chalmers P. Wylie Veterans Outpatient Clinic in Columbus, Ohio. He currently serves as a research evaluator for the NCVS. In this capacity he conducts structured interviews and coordinates assessments for military personnel enrolled in multiple NCVS research studies.
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "no-photo.jpg", width: 200, alt: "david-rozek", class: 'about-img' %>
+    <h4>Sean Williams, LCSW</h4>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "logan-smith", class: 'about-img' %>
+    <h4>Logan Smith, BS</h4>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "jerry-xyz", class: 'about-img' %>
+    <h4>Jerry Brady, BS</h4>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "cole-xyz", class: 'about-img' %>
+    <h4>Cole Lawson, BS</h4>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "tyler-cheney", class: 'about-img' %>
+    <h4>Tyler Cheney, MSW</h4>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>GRADUATE STUDENTS</span></h1>
+      <h2 class="section-header"><span>GRADUATE STUDENTS</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-3">
-    <%= image_tag "erika-roberge.jpg", width: 300, alt: "erika-roberge" %>
-    <h3>Erika Roberge, MS</h3>
-    <h4>Graduate Student</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#erika-roberge"
-        aria-expanded="false"
-        aria-controler="erika-roberge">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="erika-roberge">
-        <div class="card card-block">
-          <p>
-          Erika Roberge, B.A. is a Clinical Science Ph.D student at the University of Utah. Erika worked at the Center for the Study of Traumatic Stress and the Washington DC Veterans Affairs Medical Center examining the impact of posttraumatic stress disorder (PTSD) on veterans and their spouses. Erika's primary research interests are in the prevention and treatment of PTSD and suicide in military and veteran populations.
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "erika-roberge.jpg", width: 200, alt: "erika-roberge", class: 'about-img' %>
+    <h4>Erika Roberge, MS</h4>
+    <h5>Graduate Student</h5>
   </div>
    <div class="col-md-3">
-    <%= image_tag "kent-hinkson.jpg", width: 300, alt: "kent-hinkson" %>
-    <h3>Kent Hinkson</h3>
-    <h4>Graduate Student</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#kent-hinkson"
-        aria-expanded="false"
-        aria-controler="kent-hinkson">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="kent-hinkson">
-        <div class="card card-block">
-          <p>
-          Kent is a Clinical Science Ph.D. student at the University of Utah. Kent previously served on active duty as a Non-Commissioned Officer in the United States Marine Corps as a linguist/interrogator; his interest in PTSD and TBIs came about after being medically retired from the Marine Corps.
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "kent-hinkson.jpg", width: 200, alt: "kent-hinkson", class: 'about-img' %>
+    <h4>Kent Hinkson, BS</h4>
+    <h5>Graduate Student</h5>
   </div>
   <div class="col-md-3">
-    <%= image_tag "julia-harris.jpg", width: 300, alt: "julia-harris" %>
-    <h3>Kent Hinkson</h3>
-    <h4>Graduate Student</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#julia-harris"
-        aria-expanded="false"
-        aria-controler="julia-harris">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="julia-harris">
-        <div class="card card-block">
-          <p>
-          Julia Harris, B.S. is a Clinical Science Ph.D. student at the University of Utah, currently in her 3rd year. Prior to joining the NCVS, Julia worked as a research assistant at Harvard University on a research study examining suicide-related cognition in Veterans. Under the supervision of Dr. Craig Bryan, Julia is currently working on research studies with military personnel examining (1) suicide classification and nomenclature, (2) PTSD assessment and treatment effectiveness, and (3) suicide warning signs vs. risk factors. 
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "julia-harris.jpg", width: 200, alt: "julia-harris", class: 'about-img' %>
+    <h4>Julia Harris, BS</h4>
+    <h5>Graduate Student</h5>
   </div>
   <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "kelsi-rugo" %>
-    <h3>Kelsi Rugo, MA</h3>
-    <h4>Graduate student</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#kelsi-rugo"
-        aria-expanded="false"
-        aria-controler="kelsi-rugo">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="kelsi-rugo">
-        <div class="card card-block">
-          <p>
-          Kelsi Rugo, MA, NCC is a Clinical Science PhD student at The University of Utah. Kelsi’s research interests include (1) the role of impulsivity-related variables in the thought-to-action sequence of suicide, (2) evidence-based practice for suicide prevention and trauma treatment, and (3) transgender veteran psychological health. Kelsi previously worked in outpatient psychology at the Nashville- and Mann-Grandstaff VA Medical Centers. She plans to serve as an active duty Navy psychologist upon graduation.
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "no-photo.jpg", width: 200, alt: "kelsi-rugo", class: 'about-img' %>
+    <h4>Kelsi Rugo, MA</h4>
+    <h5>Graduate student</h5>
+  </div>
+  <div class="col-md-3">
+    <%= image_tag "william-russell.jpg", width: 200, alt: "william-russell", class: 'about-img' %>
+    <h4>William Russell, BS</h4>
+    <h5>Graduate Student<br>
+      Peer Mentor, VE3TS Utah<br>
+    </h5>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>RESEARCH ASSOCIATES</span></h1>
+      <h2 class="section-header"><span>RESEARCH ASSOCIATES</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-3">
-    <%= image_tag "william-russell.jpg", width: 300, alt: "william-russell" %>
-    <h3>William Russell</h3>
-    <h4>Lead Research Associate: VE3TS Utah</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#william-russell"
-        aria-expanded="false"
-        aria-controler="william-russell">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="william-russell">
-        <div class="card card-block">
-          <p>
-          William Russell was born in Logansport, IN in 1972, and raised in South Ogden, UT where he enlisted in the US Army, Infantry. He graduated in 1990 from OSUT at Fort Benning, GA. He was stationed in USAEUR, Germany. He then spent moved to Fort Drum, NY, South Korea, and, Fort Benning, GA. He deployed to Afghanistan for three-tours and served one tour in Iraq. Upon retirement in 2012, after 22-years of service, he obtained his AA degree at Tallahassee Community College. William moved from Florida, back to Utah to attend the University of Utah where he earned his Bachelor's Degree in Psychology with a minor in Sociology. He is currently enrolled in the MSW program at the University of Utah. He has been married to his wife, Alexis, they have a 3-year old son, Robert and has a 16-year old son, Thomas.
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "anastasia-najarian.jpg", width: 200, alt: "anastasia-najarian", class: 'about-img' %>
+    <h4>Anastasia Najarian</h4>
+  </div>
+  
+  <div class="col-md-3">
+    <%= image_tag "no-photo.jpg", width: 200, alt: "william-andres", class: 'about-img' %>
+    <h4>William Andres</h4>
   </div>
   <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "jacqueline-letts-theriault" %>
-    <h3>Jacqueline Letts Theriault, MSW</h3>     
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#jacqueline-letts"
-        aria-expanded="false"
-        aria-controler="jacqueline-letts">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="jacqueline-letts">
-        <div class="card card-block">
-          <p>
-          Jacqueline Letts Theriault was born and raised in Yorba Linda, California. At age twenty-two, she joined the U.S. Army and served 3 years as on active duty. After completing her military contract, Jacqueline began college. She completed a Bachelor of Science in Psychology degree and Master in Social Work. 
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "william-andres" %>
-    <h3>William Andres</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#william-andres"
-        aria-expanded="false"
-        aria-controler="william-andres">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="william-andres">
-        <div class="card card-block">
-          <p>
-          William Andres is an undergraduate research associate. He is majoring in Psychology and minoring in Human Development and Family Studies at the University of Utah. As a research associate, he assists in the R&R program and the study of important underlying mechanisms in BCBT. He plans on pursuing a doctorate in counseling psychology. His primary research interests are suicide risk, depression, anxiety and the underlying mechanisms of various treatments in order to enhance their efficacy. 
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "bret-bradshaw" %>
-    <h3>Bret Bradshaw</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#bret-bradshaw"
-        aria-expanded="false"
-        aria-controler="bret-bradshaw">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="bret-bradshaw">
-        <div class="card card-block">
-          <p>
-          Bret Bradshaw is a senior in the Department of Psychology working as a Research Associate. His goal is to pursue in Clinical Psychology with a focus on PTSD. Long term, Bret hopes to own a horse ranch for people (mostly minors) who have been rescued from sex traffickers.
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-</div>
-<div class="row about-us">
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "logan-smith" %>
-    <h3>Logan Smith</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#logan-smith"
-        aria-expanded="false"
-        aria-controler="logan-smith">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="logan-smith">
-        <div class="card card-block">
-          <p>
-          Logan Smith is a graduate of Florida State University, where he earned a Bachelor of Science in Psychology. While at Florida State, he completed an Honor in the Major Thesis focusing on a correlation between military basic training performance and mental health outcomes. His research interests include military psychology, suicidology, depression, and other related topics. Logan plans to pursue a PhD in Clinical Psychology.
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "jerry-xyz" %>
-    <h3>Jerry XYZ</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#jerry-xyz"
-        aria-expanded="false"
-        aria-controler="jerry-xyz">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="jerry-xyz">
-        <div class="card card-block">
-          <p>
-          Add bio here!
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "cole-xyz" %>
-    <h3>Cole XYZ</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#cole-xyz"
-        aria-expanded="false"
-        aria-controler="cole-xyz">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="cole-xyz">
-        <div class="card card-block">
-          <p>
-          Add bio here!
-          </p>
-        </div>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-3">
-    <%= image_tag "no-photo.jpg", width: 300, alt: "tyler-cheney" %>
-    <h3>Tyler Cheney, MSW</h3>
-    <h4>Research Associate</h4>
-    <p>
-      <button class="btn btn-primary"
-        type="button"
-        data-toggle="collapse"
-        data-target="#tyler-cheney"
-        aria-expanded="false"
-        aria-controler="tyler-cheney">
-        Read More
-      </button>
-    </p>
-    <p>
-      <div class="collapse" id="tyler-cheney">
-        <div class="card card-block">
-          <p>
-          Add bio here!
-          </p>
-        </div>
-      </div>
-    </p>
+    <%= image_tag "no-photo.jpg", width: 200, alt: "bret-bradshaw", class: 'about-img' %>
+    <h4>Bret Bradshaw</h4>
   </div>
 </div>
 
 <div class="row about-us">
   <div class="col-md-12">
     <div class="about-section">
-      <h1 class="section-header"><span>Co-Founder & Scientific Director</span></h1>
+      <h2 class="section-header"><span>Co-Founder & Scientific Director</span></h2>
     </div>
   </div>
 </div>
 
 <div class="row about-us">
-  <div class="col-md-3">
-    <%= image_tag "rudd-half.jpg", width: 300, alt: "rudd-half" %>
-    <h3>Bret Bradshaw</h3>
-    <h4>Research Associate</h4>
+  <div class="col-md-5">
+    <%= image_tag "rudd-half.jpg", width: 300, alt: "rudd-half", class: 'about-img' %>
+    <h4>M. David Rudd, PhD, ABPP</h4>
+    <h5>Founder</h5>
+  </div>
+  <div class="col-md-7">
+    <h6>
+      Dr. M. David Rudd, PhD, ABPP, is a board-certified clinical psychologist and is currently Provost of the University of Memphis and Co-Founder of the National Center for Veterans Studies.
+      </h6>
     <p>
       <button class="btn btn-primary"
         type="button"
@@ -649,9 +425,7 @@
     <p>
       <div class="collapse" id="rudd-half">
         <div class="card card-block">
-          <p>
-          Dr. M. David Rudd, PhD, ABPP, is a board-certified clinical psychologist and is currently Provost of the University of Memphis and Co-Founder of the National Center for Veterans Studies.
-          </p>
+          
           <p>
           He received his PhD in clinical psychology from Princeton University, and completed postdoctoral training at the Beck Institute in Philadelphia under the direction of Aaron T. Beck Dr. Rudd served in the Army on active duty status as a psychologist for four years, and has since been named a Fellow of three professional societies including the American Psychological Association (Division 12 and Division 29), the International Association of Suicide Research, and the Academy of Cognitive Therapy (a founding fellow). He was recently elected a Distinguished Practitioner and Scholar of the National Academies of Practice in Psychology. In addition to his clinical work, Dr. Rudd is an active researcher with over 170 publications and several books. He is currently conducting a $1.97M clinical trial to reduce suicide attempts among Soldiers at Fort Carson, Colorado. Dr. Rudd has served as a consultant to many organizations nationally and internationally, including the U.S. Air Force, the U.S. Army, the Department of Defense, and the Beijing Suicide Prevention and Research Center. He serves on a number of editorial boards, is past Chair of the Texas State Board of Examiners of Psychologists, past President of the Texas Psychological Association, past President of Division 12 Section VII of the American Psychological Association, past Past-President of the American Association of Suicidology, a previous members of the APA Council of Representatives, and currently serves on the board of the PDV Foundation. Dr. Rudd has testified five times before the U.S. Congress, both House and Senate, on issues related to veterans and suicide.
           </p>
